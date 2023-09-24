@@ -70,6 +70,7 @@
 			<h5 class="mb-2">Lo más visto</h5>
 			<div class="row">
 				<div class="col-6 pe-2">
+					
 					<?php
 					include('./config.php');
 					$sqlActividades1 = ("SELECT * FROM `actividades`");
