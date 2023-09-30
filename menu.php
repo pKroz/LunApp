@@ -70,7 +70,7 @@
 			<h5 class="mb-2">Lo más visto</h5>
 			<div class="row">
 				<div class="col-6 pe-2">
-					
+				<iframe name="xok-vud-tpr" src="https://framevr.io/xok-vud-tpr" height="100%" width="100%" allow="camera;microphone;display-capture;xr-spatial-tracking" scrolling="no" frameBorder="0"></iframe>
 					<?php
 					include('./config.php');
 					$sqlActividades1 = ("SELECT * FROM `actividades`");
