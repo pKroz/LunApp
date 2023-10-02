@@ -26,22 +26,22 @@
                     while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                         <div class="splide__slide">
                             <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['actividad']; ?><?php echo $dataActividad['id']; ?>_img1.jpg">
+                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['actividad']; ?><?php echo $dataActividad['id']; ?>_img2.jpg">
+                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img2.jpg">
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['actividad']; ?><?php echo $dataActividad['id']; ?>_img3.jpg">
+                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img3.jpg">
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['actividad']; ?><?php echo $dataActividad['id']; ?>_img4.jpg">
+                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img4.jpg">
                             </div>
                         </div>
                     </div>
