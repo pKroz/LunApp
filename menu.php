@@ -68,7 +68,7 @@
 		<div class="content mt-2 mb-n3">
 			<h5 class="mb-2">Lo más visto</h5>
 			<div class="row">
-				<div class="col-6 pe-2">					<?php
+				<div class="col-6 ps-2">					<?php
 					include('./config.php');
 					$sqlActividades1 = ("SELECT * FROM `actividades`");
 					$queryActividades1 = mysqli_query($con, $sqlActividades1);
