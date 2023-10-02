@@ -111,48 +111,6 @@
 				</div>
 				<?php } 
                     ?>
-				<div class="col-6 ps-2">
-					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
-						<div class="card-top m-2">
-							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">25% OFF</span>
-						</div>
-						<img src="images/travel/7m.jpg" alt="img" width="100" class="img-fluid">
-						<div class="p-2">
-							<h4 class="mb-0">Mountain Hikes</h4>
-							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>Europe, France</p>
-						</div>
-						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12">$1320 / 5 Days <span class="float-end font-400 font-11 color-yellow-dark">5 Left</span></h5>
-					</a>
-				</div>
-				<div class="col-6 pe-2">
-					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
-						<div class="card-top m-2">
-							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
-						</div>
-						<img src="images/travel/3m.jpg" alt="img" class="img-fluid">
-						<div class="p-2">
-							<h4 class="mb-0">Forest Walks</h4>
-							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>United States</p>
-						</div>
-						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12">$150 / 1 Day <span class="float-end font-400 font-11 color-red-dark">0 Left</span></h5>
-					</a>
-				</div>
-				<div class="col-6 ps-2">
-					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
-						<div class="card-top m-2">
-							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">25% OFF</span>
-						</div>
-						<img src="images/travel/5m.jpg" alt="img" width="100" class="img-fluid">
-						<div class="p-2">
-							<h4 class="mb-0">Ocean Dives</h4>
-							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>Europe, France</p>
-						</div>
-						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12">$530 / 2 Dives <span class="float-end font-400 font-11 color-blue-dark">10 Left</span></h5>
-					</a>
-				</div>
 			</div>
 		</div>
 
