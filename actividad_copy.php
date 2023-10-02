@@ -36,7 +36,7 @@
                 </div>
             </div>    
     
-            <div class="content mt-n5 pt-3">
+            <div class="content mt-2 mb-n3">
                 <div>
                     <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">21 - 28 August 2025 - 09:00 AM</span>
                     <strong class="color-theme font-20 d-block mt-n2 mb-n2">Paradise Island Escape</strong>
