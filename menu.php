@@ -68,46 +68,49 @@
 		<!-- <div class="content mt-2 mb-n3">
 			<h5 class="mb-2">Lo más visto</h5>
 			<div class="row">
-				<div class="col-6 ps-2">					<?php
-					include('./config.php');
-					$sqlActividades1 = ("SELECT * FROM `actividades`");
-					$queryActividades1 = mysqli_query($con, $sqlActividades1);
-					?>
-					<?php 
-                    while ($dataActividad1 = mysqli_fetch_array($queryActividades1)) { ?>
-					<a href="actividad.php?id=<?php echo $dataActividad1['id']; ?>" class="card card-style mx-0 mb-3">
+				<div class="col-6 ps-2">
+					
+					<a href="" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
 							<span class="bg-highlight color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
 						</div>
-						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
+						<img src="images/media/img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2 pb-0">
-							<h4 class="mb-1"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
-							<p class="pb-1 mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?></p>
+							<h4 class="mb-1"></h4>
+							<p class="pb-1 mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-clock pe-1"></i>a</p>
 						</div>
 						
 
 					</a>
-					<?php } 
-                    ?>
+					
 				</div>
 			</div>
 		</div> -->
 		<div class="content mt-2 mb-n3">
 			<div class="row">
+			<?php
+			include('./config.php');
+					$sqlActividades1 = ("SELECT * FROM `actividades`");
+					$queryActividades1 = mysqli_query($con, $sqlActividades1);
+					?>
+					<?php 
+                    while ($dataActividad1 = mysqli_fetch_array($queryActividades1)) { ?>
 				<div class="col-6 pe-2">
-					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
+					<a href="actividad.php?id=<?php echo $dataActividad1['id']; ?>" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
 							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
 						</div>
-						<img src="images/travel/4m.jpg" alt="img" class="img-fluid">
+						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
-							<h4 class="mb-0">Island Exploring</h4>
+							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
 							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>Europe, Iceland</p>
 						</div>
 						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12">$1550 / 7 Days <span class="float-end font-400 font-11 color-green-dark">30 Left</span></h5>
+						<h5 class="p-2 font-12"><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?><span class="float-end font-400 font-11 color-green-dark">30 Left</span></h5>
 					</a>
 				</div>
+				<?php } 
+                    ?>
 				<div class="col-6 ps-2">
 					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
