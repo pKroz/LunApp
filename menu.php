@@ -65,7 +65,6 @@
             </div>	
         </div>
 
-		
 		<div class="content mt-2 mb-n3">
 			<h5 class="mb-2">Lo más visto</h5>
 			<div class="row">
@@ -80,7 +79,7 @@
 						<div class="card-top m-2">
 							<span class="bg-highlight color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
 						</div>
-						<img src="images/media/<?php echo $dataActividad1['actividad']; ?><?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
+						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2 pb-0">
 							<h4 class="mb-1"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
 							<p class="pb-1 mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?></p>
