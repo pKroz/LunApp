@@ -95,7 +95,7 @@
 					?>
 					<?php 
                     while ($dataActividad1 = mysqli_fetch_array($queryActividades1)) { ?>
-				<div class="col-6 pe-2">
+				<div class="col-6 ps-2">
 					<a href="actividad.php?id=<?php echo $dataActividad1['id']; ?>" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
 							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
