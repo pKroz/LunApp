@@ -98,7 +98,7 @@
 				<div class="col-6 pe-2">
 					<a href="actividad.php?id=<?php echo $dataActividad1['id']; ?>" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
-							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
+							<span class="bg-theme color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
 						</div>
 						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
