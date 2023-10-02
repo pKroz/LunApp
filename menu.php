@@ -77,7 +77,7 @@
 						<img src="images/media/img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2 pb-0">
 							<h4 class="mb-1"></h4>
-							<p class="pb-1 mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-clock pe-1"></i>a</p>
+							<p class="pb-1 mb-0 font-11 mt-n1 opacity-70"></i>a</p>
 						</div>
 						
 
@@ -95,7 +95,7 @@
 					?>
 					<?php 
                     while ($dataActividad1 = mysqli_fetch_array($queryActividades1)) { ?>
-				<div class="col-6 ps-2">
+				<div class="col-6 pe-2">
 					<a href="actividad.php?id=<?php echo $dataActividad1['id']; ?>" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
 							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
@@ -103,14 +103,14 @@
 						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
-							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>Europe, Iceland</p>
 						</div>
 						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12"><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?><span class="float-end font-400 font-11 color-green-dark">30 Left</span></h5>
+						<i class="fa fa-clock pe-1"> <h5 class="p-2 font-12"><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?><span class="float-end font-400 font-11 color-green-dark">30 Left</span></h5>
 					</a>
 				</div>
 				<?php } 
                     ?>
+				
 			</div>
 		</div>
 
