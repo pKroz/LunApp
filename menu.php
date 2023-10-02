@@ -103,9 +103,10 @@
 						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
+							<div class="divider mb-0"></div>
+							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?></p>
 						</div>
-						<div class="divider mb-0"></div>
-						<i class="fa fa-clock pe-1"> <h5 class="p-2 font-12"><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?><span class="float-end font-400 font-11 color-green-dark">30 Left</span></h5>
+						
 					</a>
 				</div>
 				<?php } 
