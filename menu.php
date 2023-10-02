@@ -103,7 +103,7 @@
 						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
-							<div class="divider mb-0"></div>
+							<div class="divider mt-1 mb-1"></div>
 							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?></p>
 						</div>
 						
