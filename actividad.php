@@ -59,8 +59,7 @@
 
                 <div class="content mt-n5 pt-3">
                     <div>
-                        <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">Actividades en
-                            Lunahuana</span>
+                        <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">Actividades en Lunahuana</span>
 
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
@@ -160,7 +159,7 @@
                         </div>
                     </div>
                     <div class="divider mt-4"></div>
-                    <a href="https://wa.me/51<?php echo $dataActividad['reservar']; ?>" data-menu="menu-reserve"
+                    <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataActividad['reservar']; ?>&text=Quisiera reservar la actividad de <?php echo $dataActividad['actividad']; ?>" data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar
                         reserva</a>
 
