@@ -5,8 +5,7 @@
     </div>
 
     <div id="footer-bar" class="footer-bar-1">
-    
-        <a href="destacados.php"><i class="fa fa-star"></i><span>Destacados</span></a>
+        <a href="info.php"><i class="fa fa-star"></i><span>Información</span></a>
 		<a href="menu.php" class="active-nav"><i class="fa fa-home"></i><span>Inicio</span></a>
         <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Ajustes</span></a>
     </div>
