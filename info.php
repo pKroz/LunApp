@@ -28,75 +28,13 @@
                 </div>
                 </div>
 
-                
-
-                <div class="divider mb-4"></div>
-
-                <h3>¿En qué consiste la actividad?</h3>
+                <h4>¿En qué consiste la actividad?</h4>
                 <p class="mb-4">
                 Deporte extremo que consiste en el desplazamiento de un punto a otro mediante cables horizontales que están trazados en bosques entre las ramas de árboles. Y así sentir y vivir la sensación de volar, como también apreciar el paisaje y la naturaleza desde las alturas
                 </p>
 
 
                 <div class="card rounded-sm overflow-hidden" data-card-height="400">
-                    <div class="bg-black opacity-60"></div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1693531052327!6m8!1m7!1sCAoSK0FGMVFpcE12SXN3R0tKMGZKS2daa2RWVjRCSHB2RmtCcHlrS3FpT0pwaGc.!2m2!1d-12.9462624!2d-76.14112089999999!3f345.01369001105314!4f-8.738306394426317!5f0.7820865974627469" style="height:400px;" frameborder='0' allowfullscreen></iframe></div>
-
-                <div class="divider mb-4"></div>
-                <h3>Detalles</h3>
-                <p class="mb-2">
-                    Te mostramos algunos datos que debes tomar en cuenta para realizar satisfactoriamente esta actividad.
-                </p>
-                <div class="row mb-2">
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
-                        </div>
-                    </div>
-                </div>
                 <div class="divider mt-4"></div>
                 <a href="https://wa.me/51" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
 
