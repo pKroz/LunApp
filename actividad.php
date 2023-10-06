@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="divider mt-4"></div>
-                <a href="#" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
+                <a href="https://wa.me/51<?php echo $dataActividad['reservar']; ?>" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
 
             </div>
             <?php } 
