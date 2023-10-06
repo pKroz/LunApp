@@ -39,17 +39,12 @@
                 Información de la empresa 3.
                 </p>
                 <div class="divider mt-4"></div>
-                <h5>INFORMACIÓN 4</h5>
-                <p class="mb-2">
-                Información de la empresa 4.
-                </p>
-                <div class="divider mt-4"></div>
                 <a href="https://api.whatsapp.com/send/?phone=51981331428&text=Quisiera más información de la empresa" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Solicitar más información</a>
             </div>
         </div>
 
 
-        </div>
+    </div>
         <?php include_once './assets/footer.php'?>
 
     
