@@ -38,10 +38,16 @@
                 <p class="mb-2">
                 Información de la empresa 3.
                 </p>
-                <div class="card rounded-sm overflow-hidden" data-card-height="400">
+                <h5>INFORMACIÓN 4</h5>
+                <p class="mb-2">
+                Información de la empresa 4.
+                </p>
+                <h5>INFORMACIÓN 5</h5>
+                <p class="mb-2">
+                Información de la empresa 5.
+                </p>
                 <div class="divider mt-4"></div>
                 <a href="https://api.whatsapp.com/send/?phone=51981331428&text=Quisiera más información de la empresa" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
-
             </div>
         </div>
 
