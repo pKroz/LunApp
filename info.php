@@ -20,11 +20,10 @@
                         <div class="align-self-center flex-grow-1">
                             <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0">EMPRESA</strong>
                             <span class="font-11 color-theme opacity-30 d-block pb-2"><i class="fa fa-clock pe-1"></i>HORARIO</span>
-
                         </div>
                     </div>
                 </div>
-                <div class="divider mt-4"></div>
+                <div class="divider mt-2"></div>
                 <h5>INFORMACIÓN 1</h5>
                 <p class="mb-2">
                 Información de la empresa 1.
