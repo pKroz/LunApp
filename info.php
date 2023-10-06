@@ -84,54 +84,54 @@
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r1']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r2']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r3']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r4']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r5']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r6']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r7']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r8']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"></strong>
                         </div>
                     </div>
                 </div>
                 <div class="divider mt-4"></div>
-                <a href="https://wa.me/51<?php echo $dataActividad['reservar']; ?>" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
+                <a href="https://wa.me/51" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
 
             </div>
         </div>
