@@ -46,10 +46,10 @@
         </div>
 
 
-
+        </div>
         <?php include_once './assets/footer.php'?>
 
-    </div>
+    
 
     <?php include_once './assets/menu-footer.php'?>
 
