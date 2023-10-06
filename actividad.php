@@ -88,49 +88,49 @@
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion1']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r1']; ?></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion2']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r2']; ?></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion3']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r3']; ?></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion4']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r4']; ?></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion5']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r5']; ?></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion6']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r6']; ?></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion7']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r7']; ?></strong>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
                             <i class="pt-2 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['recomendacion8']; ?></strong>
+                            <strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r8']; ?></strong>
                         </div>
                     </div>
                 </div>
