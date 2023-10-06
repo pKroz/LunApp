@@ -44,7 +44,7 @@
                 Información de la empresa 4.
                 </p>
                 <div class="divider mt-4"></div>
-                <a href="https://api.whatsapp.com/send/?phone=51981331428&text=Quisiera más información de la empresa" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
+                <a href="https://api.whatsapp.com/send/?phone=51981331428&text=Quisiera más información de la empresa" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Solicitar más información</a>
             </div>
         </div>
 
