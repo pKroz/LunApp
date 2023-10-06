@@ -14,24 +14,24 @@
 			
             <div class="content mt-n5 pt-3">
                 <div>
+                    <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">Actividades en Lunahuana</span>
+                  
                     <div class="d-flex pb-0">
-                    <div class="align-self-center flex-grow-1">
-                        <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"></strong>
-                        <span class="font-11 color-theme opacity-30 d-block pb-2"><i class="fa fa-clock pe-1"></i>EMPRESA</span>
+                        <div class="align-self-center flex-grow-1">
+                            <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0">EMPRESA</strong>
+                            <span class="font-11 color-theme opacity-30 d-block pb-2"><i class="fa fa-clock pe-1"></i>HORARIO</span>
 
-                    </div>
-                    <div class="align-self-center flex-shrink-1">
-                        <a href="#" class="btn btn-full btn-sm font-900 text-uppercase rounded-sm shadow-xxl bg-highlight mb-3"><i class="fa fa-vr-cardboard pe-2 me-1 font-15 color-white"></i>Realizar tour</a>
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <div class="divider mt-4"></div>
                 <h5>INFORMACIÓN 1</h5>
-                <p class="mb-4">
+                <p class="mb-2">
                 Información de la empresa 1.
                 </p>
+                <div class="divider mt-4"></div>
                 <h5>INFORMACIÓN 2</h5>
-                <p class="mb-4">
+                <p class="mb-2">
                 Información de la empresa 2.
                 </p>
 
