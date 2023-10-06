@@ -1,12 +1,6 @@
 <!DOCTYPE HTML>
-<?php
-				include('./config.php');
-                $id = trim($_GET['id']);
-				$sqlActividades = ("SELECT * FROM `actividades` a INNER JOIN `detalles` d ON a.id = d.id_actividad WHERE a.id=$id");
-				$queryActividades = mysqli_query($con, $sqlActividades);
-			?>
 <?php include_once './assets/head.php'?>
-<title>LunApp - <?php echo $dataActividad['actividad']; ?></title>
+<title>LunApp - Información</title>
 </head>
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
@@ -16,33 +10,6 @@
     <div class="page-content header-clear-medium">
 
         <div class="card card-style">
-            <div class="splide single-slider slider-no-dots" id="single-slider-home">
-                <div class="splide__track">
-                    <div class="splide__list">
-             
-                        <div class="splide__slide">
-                            <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img2.jpg">
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img3.jpg">
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="card rounded-0 shadow-l">
-                                <img class="img-fluid" src="images/media/<?php echo $dataActividad['id']; ?>_img4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
             
 			
             <div class="content mt-n5 pt-3">
@@ -52,7 +19,7 @@
                     <div class="d-flex pb-0">
                     <div class="align-self-center flex-grow-1">
                         <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0">Canopy</strong>
-                        <span class="font-11 color-theme opacity-30 d-block pb-2"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad['horaInicio']; ?> - <?php echo $dataActividad['horaFin']; ?></span>
+                        <span class="font-11 color-theme opacity-30 d-block pb-2"><i class="fa fa-clock pe-1"></i>s</span>
 
                     </div>
                     <div class="align-self-center flex-shrink-1">
