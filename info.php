@@ -25,7 +25,7 @@
                 </div>
                 <div class="divider mt-2"></div>
                 <h5>INFORMACIÓN 1</h5>
-                <p class="mb-2">
+                <p class="mb-1">
                 Información de la empresa 1.
                 </p>
                 <div class="divider mt-4"></div>
@@ -33,10 +33,14 @@
                 <p class="mb-2">
                 Información de la empresa 2.
                 </p>
-
+                <div class="divider mt-4"></div>
+                <h5>INFORMACIÓN 3</h5>
+                <p class="mb-2">
+                Información de la empresa 3.
+                </p>
                 <div class="card rounded-sm overflow-hidden" data-card-height="400">
                 <div class="divider mt-4"></div>
-                <a href="https://wa.me/51" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
+                <a href="https://api.whatsapp.com/send/?phone=51981331428&text=Quisiera más información de la empresa" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar reserva</a>
 
             </div>
         </div>
