@@ -18,28 +18,23 @@
                   
                     <div class="d-flex pb-0">
                         <div class="align-self-center flex-grow-1">
-                            <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0">EMPRESA</strong>
-                            <span class="font-11 color-theme opacity-30 d-block pb-1"><i class="fa fa-clock pe-1"></i>HORARIO</span>
+                            <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0">Travel & Tour,</strong>
+                            <span class="font-11 color-theme opacity-30 d-block pb-1"><i class="fa fa-clock pe-1"></i>08:00am a 18:00pm</span>
                         </div>
                     </div>
                 </div>
                 <div class="divider mt-2"></div>
-                <h5>INFORMACIÓN 1</h5>
+                <h5>ACERCA DE LA EMPRESA</h5>
                 <p class="mb-1">
-                Información de la empresa 1.
+                Travel & Tour, creada el 06 de junio del año 2006, es una agencia de turismo dedicada a brindar servicios de  deportes de aventuras y recreacion en el valle de Lunahuaná.
                 </p>
                 <div class="divider mt-4"></div>
-                <h5>INFORMACIÓN 2</h5>
+                <h5>DIRECCIÓN</h5>
                 <p class="mb-2">
-                Información de la empresa 2.
+                Jr. Grau 301, Lunahuaná, Peru
                 </p>
                 <div class="divider mt-4"></div>
-                <h5>INFORMACIÓN 3</h5>
-                <p class="mb-2">
-                Información de la empresa 3.
-                </p>
-                <div class="divider mt-4"></div>
-                <a href="https://api.whatsapp.com/send/?phone=51981331428&text=Quisiera más información de la empresa" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Solicitar más información</a>
+                <a href="https://api.whatsapp.com/send/?phone=51992706247&text=Quisiera más información de la empresa" data-menu="menu-reserve" class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Solicitar más información</a>
             </div>
         </div>
 
