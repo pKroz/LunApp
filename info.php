@@ -26,7 +26,7 @@
                 <div class="divider mt-2"></div>
                 <h5>ACERCA DE LA EMPRESA</h5>
                 <p class="mb-1">
-                Travel & Tour, creada el 06 de junio del año 2006, es una agencia de turismo dedicada a brindar servicios de  deportes de aventuras y recreacion en el valle de Lunahuaná.
+                Con un equipo de guías expertos y un profundo conocimiento de la zona, estamos comprometidos a proporcionar aventuras seguras y memorables para personas de todas las edades y niveles de experiencia. Desde su creación en 2006, Travel & Tour ha estado dedicada a enriquecer la vida de nuestros clientes a través de la exploración de la belleza natural y la emoción de Lunahuaná. Esperamos ser su elección de confianza para todas sus necesidades de turismo de aventura en esta región impresionante.
                 </p>
                 <div class="divider mt-4"></div>
                 <h5>DIRECCIÓN</h5>
