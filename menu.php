@@ -56,7 +56,7 @@
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
 							<h5 class="line-height-xs font-14 pt-1 mb-1 opacity-40">S/. <?php echo $dataActividad['precio']; ?></h5>
-                            <h5 class="line-height-xs font-14 opacity-40"><?php echo trim($dataActividad['tiempo'],"."); ?></h5>
+                            <h5 class="line-height-xs font-14 opacity-25"><?php echo trim($dataActividad['tiempo'],"."); ?></h5>
 						</div>
                     </a>
 					<?php } 
