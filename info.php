@@ -17,9 +17,7 @@
 
                 <div class="content mt-n5 pt-3">
                     <div>
-                        <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3"> </span>
-
-                        <div class="d-flex pb-0">
+                        <div class="d-flex pt-3 pb-0">
                             <div class="align-self-center flex-grow-1">
                                 <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0">Travel & Tour</strong>
                                 <span class="font-11 color-theme opacity-30 d-block pb-1"><i
