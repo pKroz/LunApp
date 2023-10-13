@@ -26,7 +26,7 @@
                         </div>
                         <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
-                                        src="images/logoCLAB.png">
+                                        src="images/LogoCLAB.png">
                         </div>
                     </div>
                     <div class="divider mt-2"></div>
