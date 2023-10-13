@@ -105,8 +105,7 @@
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
 							<div class="divider mt-1 mb-1"></div>
-							<h5 class="p-2 font-12">$1550 / 7 Days <span class="float-end font-400 font-11 color-green-dark">30 Left</span></h5>
-							<p class="mb-0 font-11 mt-2 opacity-70"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['tiempo']; ?></p>
+							<h5 class="p-2 font-12">$1550 / 7 Days <span class="float-end font-400 font-11 color-green-dark"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['tiempo']; ?></span></h5>
 						</div>
 						
 					</a>
