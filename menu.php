@@ -38,7 +38,7 @@
 							<h6 class="font-12 opacity-60 mb-2">ACTIVIDAD</h6>
 						</div>
 						<div class="pe-2 align-self-center ms-auto">
-							<h6 class="font-12 opacity-60 mb-2 text-end color-highlight">PRECIO</h6>
+							<h6 class="font-12 opacity-60 mb-2 text-end">PRECIO</h6>
 							<h6 class="font-12 opacity-60 mb-2 text-end">DURACIÓN</h6>
 						</div>
 					<a>
@@ -55,7 +55,7 @@
                             <strong class="color-theme font-16 d-block"><?php echo ucfirst($dataActividad['actividad']); ?></strong>
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
-							<h5 class="line-height-xs font-14 pt-1 mb-1 opacity-40">S/. <?php echo $dataActividad['precio']; ?></h5>
+							<h5 class="line-height-xs font-14 pt-1 mb-1 opacity-40 color-highlight">S/. <?php echo $dataActividad['precio']; ?></h5>
                             <h5 class="line-height-xs font-14 opacity-30"><?php echo trim($dataActividad['tiempo'],"."); ?></h5>
 						</div>
                     </a>
