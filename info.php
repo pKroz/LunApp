@@ -17,9 +17,9 @@
 
                 <div class="content mt-n5 pt-3">
                     <div>
-                        <div class="d-flex pt-3 pb-0">
+                        <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
-                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0">Travel & Tour</strong>
+                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0 pt-3">Travel & Tour</strong>
                                 <span class="font-11 color-theme opacity-30 d-block pb-1"><i
                                         class="fa fa-clock pe-1"></i>08:00am a 06:00pm</span>
                             </div>
