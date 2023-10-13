@@ -10,12 +10,12 @@
     <div id="page">
         <?php include_once './assets/header-footer-info.php'?>
 
-        <div class="page-content header-clear-medium">
+        <div class="page-content header-clear-medium pb-0">
 
             <div class="card card-style">
 
 
-                <div class="content mt-n5 pt-3 pb-0">
+                <div class="content mt-n5 pt-3">
                     <div>
                         <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">Actividades en
                             Lunahuana</span>
