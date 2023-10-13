@@ -55,7 +55,7 @@
                             <strong class="color-theme font-16 d-block"><?php echo ucfirst($dataActividad['actividad']); ?></strong>
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
-							<h5 class="line-height-xs font-14 pt-1 opacity-40">S/. <?php echo $dataActividad['precio']; ?></h5>
+							<h5 class="line-height-xs font-14 pt-1 mb-1 opacity-40">S/. <?php echo $dataActividad['precio']; ?></h5>
                             <h5 class="line-height-xs font-14 opacity-40"><?php echo $dataActividad['tiempo']; ?></h5>
 						</div>
                     </a>
