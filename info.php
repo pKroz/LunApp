@@ -30,7 +30,7 @@
                         <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
                                         src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
-                                </div>
+                        </div>
                     </div>
                     <div class="divider mt-2"></div>
                     <h5>ACERCA DE LA EMPRESA</h5>
@@ -52,6 +52,7 @@
                         data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Solicitar
                         más información</a>
+                        </div>
                 </div>
             </div>
 
