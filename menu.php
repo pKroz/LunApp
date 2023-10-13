@@ -55,7 +55,7 @@
                             <strong class="color-theme font-16 d-block"><?php echo ucfirst($dataActividad['actividad']); ?></strong>
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
-							<h5 class="line-height-xs font-14 pt-1 mb-1 opacity-40 color-highlight">S/. <?php echo $dataActividad['precio']; ?></h5>
+							<h5 class="line-height-xs font-14 pt-1 mb-1 opacity-40">S/. <?php echo $dataActividad['precio']; ?></h5>
                             <h5 class="line-height-xs font-14 opacity-30"><?php echo trim($dataActividad['tiempo'],"."); ?></h5>
 						</div>
                     </a>
@@ -105,7 +105,7 @@
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
 							<div class="divider mt-1 mb-1"></div>
-							<h5 class="font-17 mb-0">S/. <?php echo $dataActividad1['precio']; ?><span class="float-end font-400 font-11 color-green-dark"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['tiempo']; ?></span></h5>
+							<h5 class="font-17 mb-0 color-highlight">S/. <?php echo $dataActividad1['precio']; ?><span class="float-end font-400 font-11 color-green-dark"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['tiempo']; ?></span></h5>
 						</div>
 						
 					</a>
