@@ -15,7 +15,7 @@
             <div class="card card-style">
 
 
-                <div class="content mt-n5 pt-3">
+                <div class="content mt-n5 pt-3 pb-0">
                     <div>
                         <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">Actividades en
                             Lunahuana</span>
@@ -52,7 +52,6 @@
                         data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Solicitar
                         más información</a>
-                        </div>
                 </div>
             </div>
 
