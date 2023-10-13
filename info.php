@@ -26,7 +26,7 @@
                         </div>
                         <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
+                                        src="images/logoCLAB.png">
                         </div>
                     </div>
                     <div class="divider mt-2"></div>
