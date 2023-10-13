@@ -38,8 +38,8 @@
 							<h6 class="font-12 opacity-60 mb-2">ACTIVIDAD</h6>
 						</div>
 						<div class="pe-2 align-self-center ms-auto">
-							<h6 class="font-12 opacity-60 mb-2">PRECIO</h6>
-							<h6 class="font-12 opacity-60 mb-2">DURACIÓN</h6>
+							<h6 class="font-12 opacity-60 mb-2 text-end">PRECIO</h6>
+							<h6 class="font-12 opacity-60 mb-2 text-end">DURACIÓN</h6>
 						</div>
 					<a>
 					<a data-filter-name="all" class="divider mb-1 mx-2"></a>
