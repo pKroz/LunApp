@@ -54,7 +54,7 @@
                             <strong class="color-theme font-16 d-block"><?php echo ucfirst($dataActividad['actividad']); ?></strong>
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
-                            <h5 class="line-height-xs font-14 pt-1 opacity-40"><?php echo $dataActividad['horaInicio']; ?> - <?php echo $dataActividad['horaFin']; ?></h5>
+                            <h5 class="line-height-xs font-14 pt-1 opacity-40"><?php echo $dataActividad['tiempo']; ?></h5>
                             
                         </div>
                     </a>
@@ -104,7 +104,7 @@
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
 							<div class="divider mt-1 mb-1"></div>
-							<p class="mb-0 font-11 mt-2 opacity-70"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['horaInicio']; ?> - <?php echo $dataActividad1['horaFin']; ?></p>
+							<p class="mb-0 font-11 mt-2 opacity-70"><i class="fa fa-clock pe-1"></i><?php echo $dataActividad1['tiempo']; ?></p>
 						</div>
 						
 					</a>

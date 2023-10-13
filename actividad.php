@@ -65,8 +65,7 @@
                             <div class="align-self-center flex-grow-1">
                                 <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><?php echo $dataActividad['actividad']; ?></strong>
                                 <span class="font-11 color-theme opacity-30 d-block pb-2"><i
-                                        class="fa fa-clock pe-1"></i><?php echo $dataActividad['horaInicio']; ?> -
-                                    <?php echo $dataActividad['horaFin']; ?></span>
+                                        class="fa fa-clock pe-1"></i><?php echo $dataActividad['tiempo']; ?></span>
 
                             </div>
                             <div class="align-self-center flex-shrink-1">
