@@ -38,7 +38,10 @@
 							<h6 class="font-12 opacity-60 mb-2">ACTIVIDAD</h6>
 						</div>
                         <div class="pe-2 align-self-center ms-auto">
-							<h6 class="font-12 opacity-60 mb-2">DURACIÓN - PRECIO</h6>
+							<h6 class="font-12 opacity-60 mb-2">DURACIÓN</h6>
+						</div>
+						<div class="pe-2 align-self-center ms-auto">
+							<h6 class="font-12 opacity-60 mb-2">PRECIO</h6>
 						</div>
 					<a>
 					<a data-filter-name="all" class="divider mb-1 mx-2"></a>
@@ -55,7 +58,9 @@
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
                             <h5 class="line-height-xs font-14 pt-1 opacity-40"><?php echo $dataActividad['tiempo']; ?> - S/. <?php echo $dataActividad['precio']; ?></h5>
-                            
+                        </div>
+						<div class="ms-auto text-end align-self-center pe-2">
+                            <h5 class="line-height-xs font-14 pt-1 opacity-40">S/. <?php echo $dataActividad['precio']; ?></h5>
                         </div>
                     </a>
 					<?php } 
