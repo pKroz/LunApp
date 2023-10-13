@@ -128,13 +128,7 @@
                                     class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r4']; ?></strong>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="d-flex">
-                                <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
-                                <strong
-                                    class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r5']; ?></strong>
-                            </div>
-                        </div>
+                   
                     </div>
                     <div class="divider mt-4"></div>
                     <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataActividad['reservar']; ?>&text=Quisiera reservar la actividad de <?php echo $dataActividad['actividad']; ?>" data-menu="menu-reserve"
