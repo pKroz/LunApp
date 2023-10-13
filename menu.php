@@ -38,7 +38,7 @@
 							<h6 class="font-12 opacity-60 mb-2">ACTIVIDAD</h6>
 						</div>
 						<div class="pe-2 align-self-center ms-auto">
-							<h6 class="font-12 opacity-60 mb-2 text-end">PRECIO</h6>
+							<h6 class="font-12 opacity-60 mb-2 text-end color-highlight">PRECIO</h6>
 							<h6 class="font-12 opacity-60 mb-2 text-end">DURACIÓN</h6>
 						</div>
 					<a>
