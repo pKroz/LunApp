@@ -89,7 +89,7 @@
                     <div class="card rounded-sm overflow-hidden" data-card-height="400">
                         <div class="bg-black opacity-60"></div>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!4v1693531052327!6m8!1m7!1sCAoSK0FGMVFpcE12SXN3R0tKMGZKS2daa2RWVjRCSHB2RmtCcHlrS3FpT0pwaGc.!2m2!1d-12.9462624!2d-76.14112089999999!3f345.01369001105314!4f-8.738306394426317!5f0.7820865974627469"
+                            src="<?php echo $dataActividad['embed']; ?>"
                             style="height:400px;" frameborder='0' allowfullscreen></iframe>
                     </div>
 
@@ -102,28 +102,28 @@
                     <div class="row mb-2">
                         <div class="col-6">
                             <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
                                 <strong
                                     class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r1']; ?></strong>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
                                 <strong
                                     class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r2']; ?></strong>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
                                 <strong
                                     class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r3']; ?></strong>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-13 fa-fw text-center"></i>
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
                                 <strong
                                     class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r4']; ?></strong>
                             </div>
