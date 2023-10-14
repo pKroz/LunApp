@@ -24,10 +24,10 @@
                                         class="fa fa-clock pe-1"></i>08:00am a 06:00pm</span>
                             </div>
                         </div>
-                        <div class="card rounded-0 shadow-l">
+        
                                     <img class="img-fluid"
                                         src="images/LogoCLAB.png">
-                        </div>
+                     
                     </div>
                     <div class="divider mt-2"></div>
                     <h5>ACERCA DE LA EMPRESA</h5>
