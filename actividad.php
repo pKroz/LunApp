@@ -102,7 +102,7 @@
                     <div class="row mb-2">
                         <div class="col-6">
                             <div class="d-flex">
-                                <i class="align-self-center fa fa-plus color-highlight font-13 fa-fw text-center"></i>
+                                <i class="fa fa-plus color-highlight font-13 fa-fw text-center"></i>
                                 <strong
                                     class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r1']; ?></strong>
                             </div>
