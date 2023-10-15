@@ -101,7 +101,7 @@
 						<!-- <div class="card-top m-2">
 							<span class="bg-theme color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
 						</div> -->
-						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img4.jpg" alt="img" class="img-fluid">
+						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img1.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo ucfirst($dataActividad1['actividad']); ?></h4>
 							<div class="divider mt-1 mb-1"></div>
