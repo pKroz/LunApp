@@ -71,7 +71,7 @@
                             <div class="align-self-center flex-shrink-1">
                                 <a href="#"
                                     class="btn btn-full btn-sm font-900 text-uppercase rounded-sm shadow-xxl bg-highlight mb-3"><i
-                                        class="fa fa-vr-cardboard pe-2 me-1 font-15 color-white"></i>Realizar tour</a>
+                                        class="fa fa-vr-cardboard pe-2 me-1 font-15 color-white"></i>Tour</a>
                             </div>
                         </div>
                     </div>
