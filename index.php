@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <?php include_once './assets/head.php'?>
-<title>LunApp - Inicio</title>
+<title>Travel & Tour - Inicio</title>
 </head>
     
 
@@ -21,7 +21,7 @@
                     <div class="splide__slide">
                         <div data-card-height="cover" class="card text-center pb-5">
                             <div class="card-bottom">
-                                <h1 class="font-700 font-32 mb-0">LUNAPP</h1>
+                                <h1 class="font-700 font-32 mb-0">TRAVEL & TOUR</h1>
                                 <h6 class="font-400 font-15 mb-3 pb-1 color-highlight">Aplicativo turístico</h6>
                                 <p class="color-theme boxed-text-xl opacity-80 pb-5 mb-5">
                                     Explora Lunahuaná y déjate cautivar por sus encantos naturales

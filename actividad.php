@@ -8,7 +8,7 @@
 			?>
 <?php 
                     while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
-<title>LunApp - <?php echo $dataActividad['actividad']; ?></title>
+<title>Travel & Tour - <?php echo $dataActividad['actividad']; ?></title>
 </head>
 
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
