@@ -12,3 +12,4 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+<link rel="shortcut icon" href="app/icons/favicon.ico" />
