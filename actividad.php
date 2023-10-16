@@ -131,7 +131,7 @@
                    
                     </div>
                     <div class="divider mt-4"></div>
-                    <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataActividad['reserva']; ?>&text=Quisiera reservar la actividad de <?php echo $dataActividad['actividad']; ?>" data-menu="menu-reserve"
+                    <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataActividad['reserva']; ?>&text=Quisiera reservar la actividad de <?php echo ucfirst($dataActividad['actividad']); ?>" data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar
                         reserva</a>
 
