@@ -43,7 +43,7 @@
                     while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                     <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all <?php echo strtolower($dataActividad['actividad']); ?>">
                         <div>
-                            <img src="images/media/<?php echo $dataActividad1['id']; ?>_img1.jpg" class="rounded-sm me-3" width="50" alt="img">
+                            <img src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg" class="rounded-sm me-3" width="50" alt="img">
                         </div>
                         <div>
                             <span class="color-highlight font-400 d-block pt-0 text-uppercase font-10">Actividad en Lunahuana</span>
@@ -135,21 +135,29 @@
 
 		<div class="content mt-2 mb-n3">
 			<div class="row">
+			<?php
+			include('./config.php');
+					$sqlActividades1 = ("SELECT * FROM `actividades`");
+					$queryActividades1 = mysqli_query($con, $sqlActividades1);
+					?>
+					<?php 
+                    while ($dataActividad1 = mysqli_fetch_array($queryActividades1)) { ?>
 				<div class="col-6 pe-2">
-					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
+					<a href="actividad.php?id=<?php echo $dataActividad1['id']; ?>" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
 							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
 						</div>
-						<img src="images/travel/4m.jpg" alt="img" class="img-fluid">
+						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img1.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
-							<h4 class="mb-0">Island Exploring</h4>
-							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>Europe, Iceland</p>
+							<h4 class="mb-0"><?php echo $dataActividad1['actividad']; ?></h4>
 						</div>
 						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12">$1550 / 7 Days <span class="float-end font-400 font-11 color-green-dark">30 Left</span></h5>
+						<h5 class="p-2 font-12">S/. <?php echo $dataActividad1['precio']; ?><span class="float-end font-400 font-11 color-green-dark"><?php echo $dataActividad1['tiempo']; ?></span></h5>
 					</a>
 				</div>
-				<div class="col-6 ps-2">
+				<?php } 
+                    ?>
+				<!-- <div class="col-6 ps-2">
 					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
 						<div class="card-top m-2">
 							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">25% OFF</span>
@@ -162,7 +170,7 @@
 						<div class="divider mb-0"></div>
 						<h5 class="p-2 font-12">$1320 / 5 Days <span class="float-end font-400 font-11 color-yellow-dark">5 Left</span></h5>
 					</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
