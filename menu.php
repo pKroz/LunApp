@@ -26,7 +26,7 @@
         <div class="content mt-n1">
             <div class="search-box bg-theme color-theme rounded-m shadow-l">
                 <i class="fa fa-search"></i>
-                <input type="text" class="border-0" placeholder="Search for a place... (try island)" data-search>
+                <input type="text" class="border-0" placeholder="Busca una actividad de tu interes" data-search>
 				<a href="#" class="clear-search disabled mt-0"><i class="fa fa-times color-red-dark"></i></a>
             </div>
             <div class="search-results disabled-search-list mt-3">
