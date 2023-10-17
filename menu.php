@@ -41,13 +41,13 @@
 					?>
 					<?php 
                     while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
-                    <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all maldives tropical island escape">
+                    <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all <?php echo strtolower($dataActividad['actividad']); ?>">
                         <div>
-                            <img src="images/travel/6s.jpg" class="rounded-sm me-3" width="50" alt="img">
+                            <img src="images/media/<?php echo $dataActividad1['id']; ?>_img1.jpg" class="rounded-sm me-3" width="50" alt="img">
                         </div>
                         <div>
-                            <span class="color-highlight font-400 d-block pt-0 text-uppercase font-10">Tropical Island</span>
-                            <strong class="color-theme font-16 d-block mt-n2">Maldives</strong>
+                            <span class="color-highlight font-400 d-block pt-0 text-uppercase font-10">Actividad en Lunahuana</span>
+                            <strong class="color-theme font-16 d-block mt-n2"><?php echo ($dataActividad['actividad']); ?></strong>
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
                             <h5 class="line-height-xs font-18 pt-3">S/. <?php echo $dataActividad['precio']; ?></h5>
