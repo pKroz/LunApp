@@ -13,3 +13,4 @@
 <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 <link rel="shortcut icon" href="app/icons/favicon.ico" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
