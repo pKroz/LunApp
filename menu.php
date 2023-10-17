@@ -127,25 +127,7 @@
 </div>
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="scripts/custom.js"></script> -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const searchInput = document.getElementById("search-input");
-    const activities = document.querySelectorAll("[data-filter-item]");
+<script type="text/javascript" src="scripts/custom.js"></script>
 
-    searchInput.addEventListener("input", function() {
-        const searchTerm = searchInput.value.toLowerCase().trim();
-
-        activities.forEach(activity => {
-            const activityName = activity.getAttribute("data-filter-name").toLowerCase();
-            if (activityName.includes(searchTerm) || searchTerm === "") {
-                activity.style.display = "block";
-            } else {
-                activity.style.display = "none";
-            }
-        });
-    });
-});
-</script>
 
 </body>
