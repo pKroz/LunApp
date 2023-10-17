@@ -77,48 +77,29 @@
         <div class="splide double-slider slider-no-dots visible-slider" id="double-slider-1a">
             <div class="splide__track">
                 <div class="splide__list">
+				<?php
+					include('./config.php');
+					$sqlActividades2 = ("SELECT * FROM `actividades` where destacado='1'");
+					$queryActividades2 = mysqli_query($con, $sqlActividades2);
+					?>
+					<?php 
+                    while ($dataActividad2 = mysqli_fetch_array($queryActividades2)) { ?>
                     <div class="splide__slide">
-                        <a href="#" class="mx-3" data-menu="menu-reserve">
+                        <a href="actividad.php?id=<?php echo $dataActividad2['id']; ?>" class="mx-3" data-menu="menu-reserve">
                             <div class="card card-style me-0 mb-0" style="background-image:url(images/travel/4m.jpg);" data-card-height="250">
 								<div class="card-top p-2">
 									<span class="color-black bg-white px-2 py-1 rounded-xs font-11"><i class="fa fa-star color-yellow-dark pe-2"></i>4.95</span>
 								</div>
                                 <div class="card-bottom p-2 px-2">
-                                    <h4 class="color-white line-height-s">Maldive<br> Islands</h4>
-									<span class="color-white font-10 opacity-60"><i class="fa fa-map-marker pe-2"></i>Indian Ocean</span>
+                                    <h4 class="color-white line-height-s"><?php echo $dataActividad2['actividad']; ?><br> <?php echo $dataActividad2['tiempo']; ?></h4>
+									<span class="color-white font-10 opacity-60"><i class="fa fa-map-marker pe-2"></i><?php echo $dataActividad2['precio']; ?></span>
                                 </div>
                                 <div class="card-overlay bg-gradient"></div>
                             </div>
                         </a>
                     </div>
-                    <div class="splide__slide">
-                        <a href="#" class="mx-3" data-menu="menu-reserve">
-                            <div class="card card-style me-0 mb-0" style="background-image:url(images/travel/2m.jpg);" data-card-height="250">
-                                <div class="card-top p-2">
-									<span class="color-black bg-white px-2 py-1 rounded-xs font-11"><i class="fa fa-star color-yellow-dark pe-2"></i>4.92</span>
-								</div>
-								<div class="card-bottom p-2 px-2">
-									<h4 class="color-white line-height-s">Mount Rushmore</h4>
-									<span class="color-white font-10 opacity-60"><i class="fa fa-map-marker pe-2"></i>United States</span>
-								</div>
-                                <div class="card-overlay bg-gradient"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="splide__slide">
-                        <a href="#" class="mx-3" data-menu="menu-reserve">
-                            <div class="card card-style me-0 mb-0" style="background-image:url(images/travel/7m.jpg);" data-card-height="250">
-								<div class="card-top p-2">
-									<span class="color-black bg-white px-2 py-1 rounded-xs font-11"><i class="fa fa-star color-yellow-dark pe-2"></i>4.87</span>
-								</div>
-								<div class="card-bottom p-2 px-2">
-									<h4 class="color-white line-height-s">Blue<br> Lagoon</h4>
-									<span class="color-white font-10 opacity-60"><i class="fa fa-map-marker pe-2"></i>Europe, Iceland</span>
-								</div>
-								<div class="card-overlay bg-gradient"></div>
-							</div>
-                        </a>
-                    </div>
+					<?php } 
+                    ?>
                 </div>
             </div>
         </div>
