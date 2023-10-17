@@ -34,6 +34,13 @@
             </div>
             <div class="search-results disabled-search-list mt-3">
                 <div class="card card-style mx-0 px-2 p-0 mb-0">
+					<?php
+					include('./config.php');
+					$sqlActividades = ("SELECT * FROM `actividades`");
+					$queryActividades = mysqli_query($con, $sqlActividades);
+					?>
+					<?php 
+                    while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                     <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all maldives tropical island escape">
                         <div>
                             <img src="images/travel/6s.jpg" class="rounded-sm me-3" width="50" alt="img">
@@ -43,63 +50,12 @@
                             <strong class="color-theme font-16 d-block mt-n2">Maldives</strong>
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
-                            <h5 class="line-height-xs font-18 pt-3">$1450</h5>
-                            <span class="font-10 d-block mt-n2">For 7 Nights</span>
+                            <h5 class="line-height-xs font-18 pt-3">S/. <?php echo $dataActividad['precio']; ?></h5>
+                            <span class="font-10 d-block mt-n2"><?php echo trim($dataActividad['tiempo'],"."); ?></span>
                         </div>
                     </a>
-                    <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all weekend iceland escape explore hike">
-                        <div>
-                            <img src="images/travel/7s.jpg" class="rounded-sm me-3" width="50" alt="img">
-                        </div>
-                        <div>
-                            <span class="color-highlight font-400 d-block pt-0 text-uppercase font-10">Weekend Escape</span>
-                            <strong class="color-theme font-16 d-block mt-n2">Iceland</strong>
-                        </div>
-                        <div class="ms-auto text-end align-self-center pe-2">
-                            <h5 class="line-height-xs font-18 pt-3">$675</h5>
-                            <span class="font-9 d-block mt-n2">For 3 Days</span>
-                        </div>
-                    </a>
-                    <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all cave swim explore deep dive">
-                        <div>
-                            <img src="images/travel/5s.jpg" class="rounded-sm me-3" width="50" alt="img">
-                        </div>
-                        <div>
-                            <span class="color-highlight font-400 d-block pt-0 text-uppercase font-10">Cave Exploring</span>
-                            <strong class="color-theme font-16 d-block mt-n2">Nicaragua</strong>
-                        </div>
-                        <div class="ms-auto text-end align-self-center pe-2">
-                            <h5 class="line-height-xs font-18 pt-3">$350</h5>
-                            <span class="font-9 d-block mt-n2">For 3 Dives</span>
-                        </div>
-                    </a>
-                    <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all mountain cabin tent forest">
-                        <div>
-                            <img src="images/travel/1s.jpg" class="rounded-sm me-3" width="50" alt="img">
-                        </div>
-                        <div>
-                            <span class="color-highlight font-400 d-block pt-0 text-uppercase font-10">Private Escape</span>
-                            <strong class="color-theme font-16 d-block mt-n2">Mount Hellen</strong>
-                        </div>
-                        <div class="ms-auto text-end align-self-center pe-2">
-                            <h5 class="line-height-xs font-18 pt-3">$1250</h5>
-                            <span class="font-9 d-block mt-n2">7 Days + Cabin</span>
-                        </div>
-                    </a>
-                    <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all ocean cruise ship yacht swim">
-                        <div>
-                            <img src="images/travel/4s.jpg" class="rounded-sm me-3" width="50" alt="img">
-                        </div>
-                        <div>
-                            <span class="color-highlight font-400 d-block pt-0 text-uppercase font-10">Ocean Cruise</span>
-                            <strong class="color-theme font-16 d-block mt-n2">Dubrovnik</strong>
-                        </div>
-                        <div class="ms-auto text-end align-self-center pe-2">
-                            <h5 class="line-height-xs font-18 pt-3">$2350</h5>
-                            <span class="font-9 d-block mt-n2">7 Days + Cruise</span>
-                        </div>
-                    </a>
-
+					<?php } 
+                    ?>
                 </div>
             </div>
         </div>
@@ -119,9 +75,6 @@
 		<div class="d-flex px-3 mb-n3">
             <div class="align-self-center">
                 <h4 class="mb-0">Recommended</h4>
-            </div>
-            <div class="align-self-center ms-auto">
-                <a href="#" class="font-12">View All</a>
             </div>
         </div>
 
@@ -177,9 +130,6 @@
 		<div class="d-flex px-3">
 			<div class="align-self-center">
 				<h4 class="mb-0">Great Deals</h4>
-			</div>
-			<div class="align-self-center ms-auto">
-				<a href="#" class="font-12">View All</a>
 			</div>
 		</div>
 
