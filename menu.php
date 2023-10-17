@@ -92,7 +92,7 @@
 								</div>
                                 <div class="card-bottom p-2 px-2">
                                     <h4 class="color-white line-height-s"><?php echo $dataActividad2['actividad']; ?></h4>
-									<span class="color-white font-10 opacity-60"><i class="fa fa-map-marker pe-2"></i><?php echo $dataActividad2['precio']; ?> - <?php echo $dataActividad2['tiempo']; ?></span>
+									<span class="color-white font-10 opacity-60"><i class="fa fa-tags pe-2"></i>S./ <?php echo $dataActividad2['precio']; ?> - <?php echo $dataActividad2['tiempo']; ?></span>
                                 </div>
                                 <div class="card-overlay bg-gradient"></div>
                             </div>
