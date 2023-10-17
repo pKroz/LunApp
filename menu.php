@@ -174,39 +174,6 @@
             </div>
         </div>
 
-        <div class="d-flex px-3 mb-2">
-            <div class="align-self-center">
-                <h4 class="mb-0">Last Minute Deal</h4>
-            </div>
-            <div class="align-self-center ms-auto">
-                <a href="#" class="font-12">View All</a>
-            </div>
-        </div>
-
-        <div class="card card-style" style="background-image:url(images/travel/6m.jpg)" data-card-height="260">
-            <div class="card-top p-3">
-                <a href="#" data-menu="menu-reserve" class="btn btn-s bg-white color-black rounded-s scale-box font-700 text-uppercase float-end">Get Offer</a>
-            </div>
-            <div class="card-bottom m-2">
-                <div class="d-block px-2 py-2 rounded-m">
-					<div class="d-flex">
-						<div class="pe-3">
-							<h1 class="color-white font-23 font-800">Maldive Islands</h1>
-							<p class="color-white font-12 mb-0 line-height-s opacity-70">Enjoy an amazing week on the most beautiful islands on earth.</p>
-						</div>
-						<div class="w-50 align-self-center text-end ms-auto">
-							<h1 class="color-white">$1.450</h1>
-							<p class="color-white mb-0 mt-n2 font-9 line-height-xs">
-								All Expenses Paid
-							</p>
-						</div>
-					</div>
-                </div>
-            </div>
-            <div class="card-overlay bg-gradient"></div>
-        </div>
-
-
 		<div class="d-flex px-3">
 			<div class="align-self-center">
 				<h4 class="mb-0">Great Deals</h4>
@@ -244,34 +211,6 @@
 						</div>
 						<div class="divider mb-0"></div>
 						<h5 class="p-2 font-12">$1320 / 5 Days <span class="float-end font-400 font-11 color-yellow-dark">5 Left</span></h5>
-					</a>
-				</div>
-				<div class="col-6 pe-2">
-					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
-						<div class="card-top m-2">
-							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
-						</div>
-						<img src="images/travel/3m.jpg" alt="img" class="img-fluid">
-						<div class="p-2">
-							<h4 class="mb-0">Forest Walks</h4>
-							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>United States</p>
-						</div>
-						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12">$150 / 1 Day <span class="float-end font-400 font-11 color-red-dark">0 Left</span></h5>
-					</a>
-				</div>
-				<div class="col-6 ps-2">
-					<a href="#" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
-						<div class="card-top m-2">
-							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">25% OFF</span>
-						</div>
-						<img src="images/travel/5m.jpg" alt="img" width="100" class="img-fluid">
-						<div class="p-2">
-							<h4 class="mb-0">Ocean Dives</h4>
-							<p class="mb-0 font-11 mt-n1 opacity-70"><i class="fa fa-map-marker pe-2"></i>Europe, France</p>
-						</div>
-						<div class="divider mb-0"></div>
-						<h5 class="p-2 font-12">$530 / 2 Dives <span class="float-end font-400 font-11 color-blue-dark">10 Left</span></h5>
 					</a>
 				</div>
 			</div>
