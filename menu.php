@@ -88,7 +88,7 @@
                         <a href="actividad.php?id=<?php echo $dataActividad2['id']; ?>" class="mx-3" data-menu="menu-reserve">
                             <div class="card card-style me-0 mb-0" style="background-image:url(images/media/<?php echo $dataActividad2['id']; ?>_img2.jpg);" data-card-height="250">
 								<div class="card-top p-2">
-									<span class="color-theme bg-white px-2 py-1 rounded-xs font-11"><i class="fa fa-star color-yellow-dark pe-2"></i>4.95</span>
+									<span class="color-theme bg-theme px-2 py-1 rounded-xs font-11"><i class="fa fa-star color-yellow-dark pe-2"></i>4.95</span>
 								</div>
                                 <div class="card-bottom p-2 px-2">
                                     <h4 class="color-white line-height-s"><?php echo $dataActividad2['actividad']; ?></h4>
