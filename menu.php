@@ -52,7 +52,7 @@
                     while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                     <a href="actividad.php?id=<?php echo $dataActividad['id']; ?>" class="d-flex" data-filter-item data-filter-name="all <?php echo strtolower($dataActividad['actividad']); ?>">
                         <div class="ps-2 align-self-center">
-                            <strong class="color-theme font-16 d-block"><?php echo ucfirst($dataActividad['actividad']); ?></strong>
+                            <strong class="color-theme font-16 d-block"><?php echo strtolower($dataActividad['actividad']); ?></strong>
                         </div>
                         <div class="ms-auto text-end align-self-center pe-2">
 							<h5 class="line-height-xs font-14 pt-1 mb-1 opacity-40">S/. <?php echo $dataActividad['precio']; ?></h5>
