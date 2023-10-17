@@ -128,21 +128,5 @@
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
-<script>
-$(document).ready(function() {
-    $('[data-search]').on('input', function() {
-        var searchTerm = $(this).val().toLowerCase();
-        
-        $('[data-filter-item]').each(function() {
-            var activityName = $(this).data('filter-name').toLowerCase();
-            
-            if (activityName.indexOf(searchTerm) !== -1) {
-                $(this).show();
-            } else {
-                $(this).hide();
-            }
-        });
-    });
-});
-</script>
+
 </body>
