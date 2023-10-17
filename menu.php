@@ -70,7 +70,7 @@
 
 		<div class="d-flex px-3 mb-n3">
             <div class="align-self-center">
-                <h4 class="mb-0">Recommended</h4>
+                <h4 class="mb-0">Recomendados</h4>
             </div>
         </div>
 
@@ -86,13 +86,13 @@
                     while ($dataActividad2 = mysqli_fetch_array($queryActividades2)) { ?>
                     <div class="splide__slide">
                         <a href="actividad.php?id=<?php echo $dataActividad2['id']; ?>" class="mx-3" data-menu="menu-reserve">
-                            <div class="card card-style me-0 mb-0" style="background-image:url(images/travel/4m.jpg);" data-card-height="250">
+                            <div class="card card-style me-0 mb-0" style="background-image:url(images/media/<?php echo $dataActividad1['id']; ?>_img2.jpg);" data-card-height="250">
 								<div class="card-top p-2">
-									<span class="color-black bg-white px-2 py-1 rounded-xs font-11"><i class="fa fa-star color-yellow-dark pe-2"></i>4.95</span>
+									<span class="color-theme bg-white px-2 py-1 rounded-xs font-11"><i class="fa fa-star color-yellow-dark pe-2"></i>4.95</span>
 								</div>
                                 <div class="card-bottom p-2 px-2">
-                                    <h4 class="color-white line-height-s"><?php echo $dataActividad2['actividad']; ?><br> <?php echo $dataActividad2['tiempo']; ?></h4>
-									<span class="color-white font-10 opacity-60"><i class="fa fa-map-marker pe-2"></i><?php echo $dataActividad2['precio']; ?></span>
+                                    <h4 class="color-white line-height-s"><?php echo $dataActividad2['actividad']; ?></h4>
+									<span class="color-white font-10 opacity-60"><i class="fa fa-map-marker pe-2"></i><?php echo $dataActividad2['precio']; ?> - <?php echo $dataActividad2['tiempo']; ?></span>
                                 </div>
                                 <div class="card-overlay bg-gradient"></div>
                             </div>
