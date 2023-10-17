@@ -17,11 +17,8 @@
 	<div class="content notch-clear">
             <div class="d-flex pt-2">
                 <div class="align-self-center me-auto">
-                    <strong class="text-uppercase opacity-60 font-12">Welcome</strong>
-                    <h1 class="mt-n2 font-30">Explore</h1>
-                </div>
-                <div class="align-self-center ms-auto mt-1">
-                    <a href="#" class="d-block"><img src="images/pictures/6s.jpg" class="img-fluid shadow-xl rounded-circle" width="52" alt="img"></a>
+                    <strong class="text-uppercase opacity-60 font-12">Bienvenido</strong>
+                    <h1 class="mt-n2 font-30">Travel & Tour</h1>
                 </div>
             </div>
         </div>
@@ -62,10 +59,9 @@
         <div class="search-no-results disabled mt-4">
             <div class="card card-style">
                 <div class="content">
-                    <h1>No Results</h1>
+                    <h1>Sin resultados</h1>
                     <p>
-                        Your search brought up no results. Try using a different keyword. Or try typying all
-                        to see all items in the demo. These can be linked to anything you want.
+                        No se encontraron datos.
                     </p>
                 </div>
             </div>
@@ -144,9 +140,9 @@
                     while ($dataActividad1 = mysqli_fetch_array($queryActividades1)) { ?>
 				<div class="col-6 pe-2">
 					<a href="actividad.php?id=<?php echo $dataActividad1['id']; ?>" data-menu="menu-reserve" class="card card-style mx-0 mb-3">
-						<div class="card-top m-2">
+						<!-- <div class="card-top m-2">
 							<span class="bg-white color-black font-11 px-2 py-1 font-700 rounded-xs shadow-xxl">15% OFF</span>
-						</div>
+						</div> -->
 						<img src="images/media/<?php echo $dataActividad1['id']; ?>_img1.jpg" alt="img" class="img-fluid">
 						<div class="p-2">
 							<h4 class="mb-0"><?php echo $dataActividad1['actividad']; ?></h4>
