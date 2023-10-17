@@ -28,7 +28,7 @@
         <div class="content mt-n4">
             <div class="search-box bg-theme color-theme rounded-m shadow-l">
                 <i class="fa fa-search"></i>
-                <input type="text" class="border-0" placeholder="Buscar una actividad" data-search>
+                <input type="text" class="border-0" placeholder="Buscar una actividad" data-search id="search-input">
 				<a href="#" class="clear-search disabled no-click mt-0"></a>
             </div>
             <div class="search-results disabled-search-list mt-3">
@@ -128,5 +128,24 @@
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    const activities = document.querySelectorAll("[data-filter-item]");
+
+    searchInput.addEventListener("input", function() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        activities.forEach(activity => {
+            const activityName = activity.getAttribute("data-filter-name").toLowerCase();
+            if (activityName.includes(searchTerm) || searchTerm === "") {
+                activity.style.display = "block";
+            } else {
+                activity.style.display = "none";
+            }
+        });
+    });
+});
+</script>
 
 </body>
