@@ -50,7 +50,7 @@
 					?>
 					<?php 
                     while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
-                    <a href="actividad.php?id=<?php echo $dataActividad['id']; ?>" class="d-flex" data-filter-item data-filter-name="all <?php echo $dataActividad['actividad']; ?>">
+                    <a href="actividad.php?id=<?php echo $dataActividad['id']; ?>" class="d-flex" data-filter-item data-filter-name="all <?php echo strtolower($dataActividad['actividad']); ?>">
                         <div class="ps-2 align-self-center">
                             <strong class="color-theme font-16 d-block"><?php echo ucfirst($dataActividad['actividad']); ?></strong>
                         </div>
