@@ -30,7 +30,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3"><?php echo $dataCIISIC['id']; ?></span>
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
-                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><i
+                                <strong class="color-theme font-20 d-block mt-0 mb-2 pb-0"><i
                                         class="fa fa-user pe-2"></i><?php echo $dataCIISIC['nombres']; ?> <?php echo $dataCIISIC['apellidos']; ?></strong>
                             </div>
                         </div>
