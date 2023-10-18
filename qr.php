@@ -3,12 +3,12 @@
 <?php
 				include('./config.php');
                 $dni = trim($_GET['dni']);
-				$sqlCIISIC = ("SELECT * FROM `actividades` a INNER JOIN `detalles` d ON a.id = d.id_actividad WHERE a.id=$id");
+				$sqlCIISIC = ("SELECT * FROM `ciisic` WHERE dni=$dnis");
 				$queryCIISIC = mysqli_query($con, $sqlCIISIC);
 			?>
 <?php 
-while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
-<title>Travel & Tour - <?php echo $dataActividad['actividad']; ?></title>
+while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
+<title>QR CIISIC - <?php echo $dataCIISIC['apellidos']; ?></title>
 </head>
 
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
@@ -63,9 +63,9 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
 
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
-                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><?php echo $dataActividad['actividad']; ?></strong>
+                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><?php echo $dataActividad['id']; ?></strong>
                                 <span class="font-11 color-theme opacity-30 d-block pb-2"><i
-                                        class="fa fa-clock pe-1"></i><?php echo $dataActividad['tiempo']; ?></span>
+                                        class="fa fa-clock pe-1"></i><?php echo $dataActividad['id']; ?></span>
 
                             </div>
                             <div class="align-self-center flex-shrink-1">
@@ -99,37 +99,6 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                         Te mostramos algunos datos que debes tomar en cuenta para realizar satisfactoriamente esta
                         actividad.
                     </p>
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong
-                                    class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r1']; ?></strong>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong
-                                    class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r2']; ?></strong>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong
-                                    class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r3']; ?></strong>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong
-                                    class="align-self-center ps-1 font-13 color-theme"><?php echo $dataActividad['r4']; ?></strong>
-                            </div>
-                        </div>
-                   
-                    </div>
                     <div class="divider mt-4"></div>
                     <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataActividad['reserva']; ?>&text=Quisiera reservar la actividad de <?php echo ucfirst($dataActividad['actividad']); ?>" data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar
