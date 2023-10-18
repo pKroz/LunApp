@@ -23,44 +23,11 @@
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
                                 <strong class="color-theme font-20 d-block mt-0 mt-3 mb-3 pb-0"><i
-                                        class="fa fa-user pe-2"></i>QR INVALIDO - NO INSCRITO</strong>
+                                        class="fa fa-user pe-2"></i>DISPOSITIVO INCORRECTO - PARA VISUALIZAR CORRECTAMENTE TU INSCRIPCIÓN TIENES QUE ENTRAR DESDE UN CELULAR</strong>
                             </div>
                         </div>
                     </div>
-
                     <div class="divider mb-2"></div>
-                    <div class="row mb-2">
-                    <div class="col-12">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">DNI: </strong><strong class="align-self-center ps-1 font-13 color-white">-</strong>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">MODALIDAD: </strong><strong class="align-self-center ps-1 font-13 color-white">-</strong>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">TIPO DE INSCRIPCIÓN: </strong><strong class="align-self-center ps-1 font-13 color-white">-</strong>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">CORREO: </strong><strong class="align-self-center ps-1 font-13 color-white">-</strong>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">CELULAR: </strong><strong class="align-self-center ps-1 font-13 color-white">-</strong>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
