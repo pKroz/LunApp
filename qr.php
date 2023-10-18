@@ -4,7 +4,7 @@
 				include('./config.php');
                 $dni = trim($_GET['dni']);
                 $id = trim($_GET['id']);
-				$sqlCIISIC = ("SELECT * FROM `ciisic` WHERE dni=$dni or id=$id");
+				$sqlCIISIC = ("SELECT * FROM `ciisic` WHERE dni=$dni or id=$dni");
 				$queryCIISIC = mysqli_query($con, $sqlCIISIC);
 			?>
 <?php 
