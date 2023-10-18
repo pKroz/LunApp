@@ -3,7 +3,7 @@
 <?php
 				include('./config.php');
                 $dni = trim($_GET['dni']);
-				$sqlCIISIC = ("SELECT * FROM `ciisic` WHERE dni=$dnis");
+				$sqlCIISIC = ("SELECT * FROM `ciisic` WHERE dni=$dni");
 				$queryCIISIC = mysqli_query($con, $sqlCIISIC);
 			?>
 <?php 
@@ -31,25 +31,25 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                             <div class="splide__slide">
                                 <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
+                                        src="images/media/<?php echo $dataCIISIC['id']; ?>_img1.jpg">
                                 </div>
                             </div>
                             <div class="splide__slide">
                                 <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img2.jpg">
+                                        src="images/media/<?php echo $dataCIISIC['id']; ?>_img2.jpg">
                                 </div>
                             </div>
                             <div class="splide__slide">
                                 <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img3.jpg">
+                                        src="images/media/<?php echo $dataCIISIC['id']; ?>_img3.jpg">
                                 </div>
                             </div>
                             <div class="splide__slide">
                                 <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img4.jpg">
+                                        src="images/media/<?php echo $dataCIISIC['id']; ?>_img4.jpg">
                                 </div>
                             </div>
                         </div>
@@ -63,9 +63,9 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
-                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><?php echo $dataActividad['id']; ?></strong>
+                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><?php echo $dataCIISIC['id']; ?></strong>
                                 <span class="font-11 color-theme opacity-30 d-block pb-2"><i
-                                        class="fa fa-clock pe-1"></i><?php echo $dataActividad['id']; ?></span>
+                                        class="fa fa-clock pe-1"></i><?php echo $dataCIISIC['id']; ?></span>
 
                             </div>
                             <div class="align-self-center flex-shrink-1">
@@ -82,14 +82,14 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 
                     <h3>¿En qué consiste la actividad?</h3>
                     <p class="mb-4">
-                    <?php echo $dataActividad['descripcion']; ?>
+                    <?php echo $dataCIISIC['id']; ?>
                     </p>
 
 
                     <div class="card rounded-sm overflow-hidden" data-card-height="400">
                         <div class="bg-black opacity-60"></div>
                         <iframe
-                            src="<?php echo $dataActividad['embed']; ?>"
+                            src="<?php echo $dataCIISIC['id']; ?>"
                             style="height:400px;" frameborder='0' allowfullscreen></iframe>
                     </div>
 
@@ -100,7 +100,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         actividad.
                     </p>
                     <div class="divider mt-4"></div>
-                    <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataActividad['reserva']; ?>&text=Quisiera reservar la actividad de <?php echo ucfirst($dataActividad['actividad']); ?>" data-menu="menu-reserve"
+                    <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataCIISIC['id']; ?>&text=Quisiera reservar la actividad de <?php echo ucfirst($dataCIISIC['id']); ?>" data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar
                         reserva</a>
 
