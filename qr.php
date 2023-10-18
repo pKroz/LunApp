@@ -32,28 +32,25 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                             <div class="align-self-center flex-grow-1">
                                 <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><i
                                         class="fa fa-user pe-2"></i><?php echo $dataCIISIC['nombres']; ?> <?php echo $dataCIISIC['apellidos']; ?></strong>
-                                <span class="font-11 color-theme opacity-30 d-block pb-2"><i
-                                        class="fa fa-tag pe-1"></i><?php echo $dataCIISIC['dni']; ?></span>
-
                             </div>
                         </div>
                     </div>
 
                     <div class="divider mb-2"></div>
                     <div class="row mb-2">
-                    <div class="col-6">
+                    <div class="col-12">
                             <div class="d-flex">
                                 <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
                                 <strong class="font-13 ps-1 color-theme opacity-50 d-block">DNI: </strong><strong class="align-self-center ps-1 font-13 color-white"><?php echo $dataCIISIC['dni']; ?></strong>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12">
                             <div class="d-flex">
                                 <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
                                 <strong class="font-13 ps-1 color-theme opacity-50 d-block">MODALIDAD: </strong><strong class="align-self-center ps-1 font-13 color-white"><?php echo $dataCIISIC['modalidad']; ?></strong>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12">
                             <div class="d-flex">
                                 <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
                                 <strong class="font-13 ps-1 color-theme opacity-50 d-block">TIPO DE INSCRIPCIÓN: </strong><strong class="align-self-center ps-1 font-13 color-white"><?php echo $dataCIISIC['tipo']; ?></strong>
