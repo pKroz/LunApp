@@ -69,7 +69,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                             </div>
                         </div>
                     </div>
-                    <h3>Previsualización del voucher</h3>
+                    <h3>PREVISUALIZACIÓN DEL VOUCHER</h3>
                     <p class="mb-2">
                     </p>
                     <div class="card rounded-sm overflow-hidden" data-card-height="550">
