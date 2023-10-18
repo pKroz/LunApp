@@ -31,18 +31,38 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
                                 <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><i
-                                        class="fa fa-user pe-1"></i><?php echo $dataCIISIC['nombres']; ?> <?php echo $dataCIISIC['apellidos']; ?></strong>
+                                        class="fa fa-user pe-2"></i><?php echo $dataCIISIC['nombres']; ?> <?php echo $dataCIISIC['apellidos']; ?></strong>
                                 <span class="font-11 color-theme opacity-30 d-block pb-2"><i
-                                        class="fa fa-user pe-1"></i><?php echo $dataCIISIC['dni']; ?></span>
+                                        class="fa fa-tag pe-1"></i><?php echo $dataCIISIC['dni']; ?></span>
 
                             </div>
                         </div>
                     </div>
 
-
-
-                    <div class="divider mb-4"></div>
-
+                    <div class="divider mb-2"></div>
+                    <div class="row mb-2">
+                    <div class="col-6">
+                            <div class="d-flex">
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
+                                <strong
+                                    class="align-self-center ps-1 font-13 color-theme">DNI: <?php echo $dataCIISIC['dni']; ?></strong>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
+                                <strong
+                                    class="align-self-center ps-1 font-13 color-theme">Modalidad: <?php echo $dataCIISIC['modalidad']; ?></strong>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
+                                <strong
+                                    class="align-self-center ps-1 font-13 color-theme">Tipo de Inscripción: <?php echo $dataCIISIC['tipo']; ?></strong>
+                            </div>
+                        </div>
+                    </div>
                     <h3>Previsualización del voucher</h3>
                     <p class="mb-2">
                     </p>
