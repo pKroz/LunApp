@@ -7,6 +7,7 @@
 				$queryCIISIC = mysqli_query($con, $sqlCIISIC);
 			?>
 <?php 
+if (mysqli_num_rows($queryCIISIC) > 0) {
 while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 <title>QR CIISIC - <?php echo $dataCIISIC['apellidos']; ?></title>
 </head>
@@ -79,8 +80,13 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase">VER COMPROBANTE DE PAGO</a>
                     </div>
                 </div>
-                <?php } 
-            ?>
+                <?php
+                    } 
+                } else {
+                    // Mostrar un mensaje de error si no se encontraron resultados.
+                    echo "No se encontraron registros con el ID proporcionado.";
+                }
+                ?>
             </div>
 
 
