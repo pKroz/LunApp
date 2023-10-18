@@ -2,9 +2,9 @@
 <?php include_once './assets/head.php'?>
 <?php
 				include('./config.php');
-                $id = trim($_GET['id']);
-				$sqlActividades = ("SELECT * FROM `actividades` a INNER JOIN `detalles` d ON a.id = d.id_actividad WHERE a.id=$id");
-				$queryActividades = mysqli_query($con, $sqlActividades);
+                $dni = trim($_GET['dni']);
+				$sqlCIISIC = ("SELECT * FROM `actividades` a INNER JOIN `detalles` d ON a.id = d.id_actividad WHERE a.id=$id");
+				$queryCIISIC = mysqli_query($con, $sqlCIISIC);
 			?>
 <?php 
 while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
