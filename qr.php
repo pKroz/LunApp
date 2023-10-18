@@ -44,9 +44,8 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 
                     <div class="divider mb-4"></div>
 
-                    <h3>¿En qué consiste la actividad?</h3>
-                    <p class="mb-4">
-                    <?php echo $dataCIISIC['id']; ?>
+                    <h3>Previsualización del voucher</h3>
+                    <p class="mb-2">
                     </p>
                     <div class="card rounded-sm overflow-hidden" data-card-height="650">
                         <div class="bg-black opacity-60"></div>
