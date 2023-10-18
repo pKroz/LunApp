@@ -72,12 +72,11 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                     <h3>PREVISUALIZACIÓN DEL VOUCHER</h3>
                     <p class="mb-2">
                     </p>
-                    <div class="card rounded-sm overflow-hidden" data-card-height="550">
+                    <div class="card rounded-sm overflow-hidden" data-card-height="650">
                         <div class="bg-black opacity-60"></div>
                         <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
                         <a href="<?php echo $dataCIISIC['comprobante']; ?>" data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase">VER COMPROBANTE DE PAGO</a>
-
                     </div>
                 </div>
                 <?php } 
