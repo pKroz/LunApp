@@ -85,7 +85,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         <div class="col-12">
                             <div class="d-flex">
                                 <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">CELULAR: </strong><strong class="align-self-center ps-1 font-13 color-theme"><a href="https://wa.me/51<?php echo $dataCIISIC['celular']; ?>" class="color-white"><?php echo $dataCIISIC['celular']; ?></a></strong>
+                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">CELULAR: </strong><strong class="align-self-center ps-1 font-13 color-theme"><a href="https://wa.me/51<?php echo $dataCIISIC['celular']; ?>" class="color-theme"><?php echo $dataCIISIC['celular']; ?></a></strong>
                             </div>
                         </div>
                     </div>
