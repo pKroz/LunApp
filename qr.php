@@ -52,9 +52,10 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                     <p class="mb-4">
                     <?php echo $dataCIISIC['id']; ?>
                     </p>
-
-                    <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
-                   
+                    <div class="card rounded-sm overflow-hidden" data-card-height="200">
+                        <div class="bg-black opacity-60"></div>
+                        <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
+                    </div>
 
                     <div class="divider mb-4"></div>
                     <h3>Detalles</h3>
