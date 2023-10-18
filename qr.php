@@ -56,9 +56,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 
                     <div class="card rounded-sm overflow-hidden" data-card-height="400">
                         <div class="bg-black opacity-60"></div>
-                        <iframe
-                            src="<?php echo $dataCIISIC['id']; ?>"
-                            style="height:400px;" frameborder='0' allowfullscreen></iframe>
+                        <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
                     </div>
 
                     <div class="divider mb-4"></div>
@@ -68,9 +66,8 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         actividad.
                     </p>
                     <div class="divider mt-4"></div>
-                    <a href="https://api.whatsapp.com/send/?phone=51<?php echo $dataCIISIC['id']; ?>&text=Quisiera reservar la actividad de <?php echo ucfirst($dataCIISIC['id']); ?>" data-menu="menu-reserve"
-                        class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Realizar
-                        reserva</a>
+                    <a href="<?php echo $dataCIISIC['comprobante']; ?>" data-menu="menu-reserve"
+                        class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Ver comprobante</a>
 
                 </div>
                 <?php } 
