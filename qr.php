@@ -58,8 +58,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         <div class="col-6">
                             <div class="d-flex">
                                 <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                <span class="font-13 color-theme opacity-30 d-block">Tipo de Inscripción: </span><strong
-                                    class="align-self-center font-13 color-theme"><?php echo $dataCIISIC['tipo']; ?></strong>
+                                <strong class="font-13 color-highlight opacity-50 d-block">Tipo de Inscripción: </strong><strong class="align-self-center font-13 color-theme"><?php echo $dataCIISIC['tipo']; ?></strong>
                             </div>
                         </div>
                     </div>
