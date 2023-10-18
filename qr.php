@@ -53,7 +53,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                     <?php echo $dataCIISIC['id']; ?>
                     </p>
 
-
+                    <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
                     <div class="card rounded-sm overflow-hidden" data-card-height="400">
                         <div class="bg-black opacity-60"></div>
                         <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
