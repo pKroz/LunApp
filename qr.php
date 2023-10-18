@@ -1,4 +1,25 @@
 <!DOCTYPE HTML>
+<?php
+// Función para verificar si el agente de usuario corresponde a un dispositivo móvil
+function isMobileDevice() {
+    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+    $mobileKeywords = array('Android', 'iPhone', 'iPad', 'Windows Phone', 'BlackBerry', 'Mobile');
+    
+    foreach ($mobileKeywords as $keyword) {
+        if (stripos($userAgent, $keyword) !== false) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Redirigir a la versión móvil si se detecta un dispositivo móvil
+if (!isMobileDevice()) {
+    // Redirigir a la versión móvil de tu sitio web
+    header('Location: mobile/index.php'); // Reemplaza 'mobile/index.php' con la URL de tu versión móvil
+    exit();
+}
+?>
 <?php include_once './assets/head.php'?>
 <?php
 				include('./config.php');
