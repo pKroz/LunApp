@@ -76,7 +76,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                         <div class="bg-black opacity-60"></div>
                         <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
                         <a href="<?php echo $dataCIISIC['comprobante']; ?>" data-menu="menu-reserve"
-                        class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase">Ver comprobante</a>
+                        class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase">VER COMPROBANTE DE PAGO</a>
 
                     </div>
                 </div>
