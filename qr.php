@@ -63,17 +63,10 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                     <div class="card rounded-sm overflow-hidden" data-card-height="650">
                         <div class="bg-black opacity-60"></div>
                         <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
-                    </div>
-
-                    <div class="divider mb-4"></div>
-                    <h3>Detalles</h3>
-                    <p class="mb-2">
-                        Si
-                    </p>
-                    <div class="divider mt-4"></div>
-                    <a href="<?php echo $dataCIISIC['comprobante']; ?>" data-menu="menu-reserve"
+                        <a href="<?php echo $dataCIISIC['comprobante']; ?>" data-menu="menu-reserve"
                         class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Ver comprobante</a>
 
+                    </div>
                 </div>
                 <?php } 
             ?>
