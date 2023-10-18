@@ -14,7 +14,7 @@ function isMobileDevice() {
 }
 
 if (!isMobileDevice()) {
-    header('Location: mobile/index.php');
+    header('Location: movil.php');
     exit();
 }
 ?>
