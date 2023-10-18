@@ -13,10 +13,8 @@ function isMobileDevice() {
     return false;
 }
 
-// Redirigir a la versión móvil si se detecta un dispositivo móvil
 if (!isMobileDevice()) {
-    // Redirigir a la versión móvil de tu sitio web
-    header('Location: mobile/index.php'); // Reemplaza 'mobile/index.php' con la URL de tu versión móvil
+    header('Location: mobile/index.php');
     exit();
 }
 ?>
