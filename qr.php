@@ -56,15 +56,27 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                                 <strong class="font-13 ps-1 color-theme opacity-50 d-block">TIPO DE INSCRIPCIÓN: </strong><strong class="align-self-center ps-1 font-13 color-white"><?php echo $dataCIISIC['tipo']; ?></strong>
                             </div>
                         </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
+                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">CORREO: </strong><strong class="align-self-center ps-1 font-13 color-white"><?php echo $dataCIISIC['correo']; ?></strong>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
+                                <strong class="font-13 ps-1 color-theme opacity-50 d-block">CELULAR: </strong><strong class="align-self-center ps-1 font-13 color-white"><?php echo $dataCIISIC['celular']; ?></strong>
+                            </div>
+                        </div>
                     </div>
                     <h3>Previsualización del voucher</h3>
                     <p class="mb-2">
                     </p>
-                    <div class="card rounded-sm overflow-hidden" data-card-height="650">
+                    <div class="card rounded-sm overflow-hidden" data-card-height="550">
                         <div class="bg-black opacity-60"></div>
                         <img src="https://drive.google.com/uc?export=view&id=<?php echo $dataCIISIC['idembed']; ?>">
                         <a href="<?php echo $dataCIISIC['comprobante']; ?>" data-menu="menu-reserve"
-                        class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase ">Ver comprobante</a>
+                        class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase">Ver comprobante</a>
 
                     </div>
                 </div>
