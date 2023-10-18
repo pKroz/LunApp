@@ -43,7 +43,20 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
                             </div>
                         </div>
                     </div>
-
+                    <div class="card card-style">
+<a href="#" data-menu="portfolio-1" class="card card-style mx-0 mb-0 rounded-0 preload-img entered loaded" data-src="images/pictures/21w.jpg" data-card-height="200" style="height: 200px; background-image: url(&quot;images/pictures/21w.jpg&quot;);" data-ll-status="loaded">
+<div class="card-bottom ms-3 mb-3">
+<h1 class="color-white mb-0">Portfolio Title 1</h1>
+</div>
+<div class="card-overlay bg-gradient rounded-0"></div>
+</a>
+<div class="content">
+<p>A small description about your project goes here. Then, you can access the portfolio project to see it in detail.</p>
+<a href="#" class="color-theme font-12"><i class="fa fa-link font-10 me-2"></i>View More: <span class="color-highlight">Project Title 1</span></a><br>
+<a href="#" class="color-theme font-12"><i class="fa fa-bookmark font-10 me-2"></i>Built For: <span class="color-highlight">Envato Marketplaces</span></a><br>
+<a href="#" class="color-theme font-12"><i class="fa fa-tag font-10 me-2"></i>Tags: <span class="color-highlight">Portfolio, Product, Images</span></a><br>
+</div>
+</div>
 
 
                     <div class="divider mb-4"></div>
