@@ -27,13 +27,12 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 
                 <div class="content mt-n5 pt-3">
                     <div>
-                        <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">Actividades en Lunahuana</span>
-
+                        <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3"><?php echo $dataCIISIC['id']; ?></span>
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
-                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><?php echo $dataCIISIC['id']; ?></strong>
+                                <strong class="color-theme font-20 d-block mt-0 mb-0 pb-0"><?php echo $dataCIISIC['nombres']; ?> <?php echo $dataCIISIC['apellidos']; ?></strong>
                                 <span class="font-11 color-theme opacity-30 d-block pb-2"><i
-                                        class="fa fa-clock pe-1"></i><?php echo $dataCIISIC['id']; ?></span>
+                                        class="fa fa-clock pe-1"></i><?php echo $dataCIISIC['dni']; ?></span>
 
                             </div>
                         </div>
