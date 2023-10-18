@@ -19,7 +19,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 
     <div id="page">
 
-        <?php include_once './assets/header-footer-act.php'?>
+        <?php include_once './assets/header-footer-qr.php'?>
 
         <div class="page-content header-clear-medium">
 
@@ -86,7 +86,7 @@ while ($dataCIISIC = mysqli_fetch_array($queryCIISIC)) { ?>
 
 
 
-            <?php include_once './assets/footer.php'?>
+            <?php include_once './assets/footerqr.php'?>
 
         </div>
 
