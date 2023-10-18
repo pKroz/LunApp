@@ -23,7 +23,7 @@
                         <div class="d-flex pb-0">
                             <div class="align-self-center flex-grow-1">
                                 <strong class="color-theme font-20 d-block mt-0 mt-3 mb-3 pb-0"><i
-                                        class="fa fa-alert pe-2"></i>DISPOSITIVO INCORRECTO - PARA VISUALIZAR CORRECTAMENTE TU INSCRIPCIÓN TIENES QUE ENTRAR DESDE UN CELULAR</strong>
+                                        class="fa fa-triangle-exclamation pe-2"></i>DISPOSITIVO INCORRECTO - PARA VISUALIZAR CORRECTAMENTE TU INSCRIPCIÓN TIENES QUE ENTRAR DESDE UN CELULAR</strong>
                             </div>
                         </div>
                     </div>
