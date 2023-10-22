@@ -87,9 +87,9 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                                     data-gallery="gallery-b" href="images/media/<?php echo $dataActividad['id']; ?>_img2.jpg"
                                     style="background-image: url(&quot;images/media/<?php echo $dataActividad['id']; ?>_img2.jpg&quot;); height: 270px;">
                                     <div class="card-bottom">
-                                        <h2 class="color-white text-center mb-n1">Sticky Rocks</h2>
+                                        <h2 class="color-white text-center mb-n1"><?php echo $dataActividad['actividad']; ?></h2>
                                         <p class="color-white text-center opacity-50 pb-3">
-                                            Built with Love &amp; Care
+                                            Travel & &amp; Tours
                                         </p>
                                     </div>
                                     <div class="card-overlay bg-gradient"></div>
