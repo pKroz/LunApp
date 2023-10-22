@@ -86,7 +86,7 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                     </p>
 
 
-                    <div class="card rounded-sm overflow-hidden" data-card-height="400">
+                    <div class="card rounded-sm overflow-hidden splide single-slider slider-no-dots" data-card-height="400">
                         <div class="bg-black opacity-60"></div>
                         <iframe
                             src="<?php echo $dataActividad['embed']; ?>"
