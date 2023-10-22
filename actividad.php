@@ -89,7 +89,7 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                                     <div class="card-bottom">
                                         <h2 class="color-white text-center mb-n1"><?php echo $dataActividad['actividad']; ?></h2>
                                         <p class="color-white text-center opacity-50 pb-3">
-                                            Travel & &amp; Tours
+                                            Travel &amp; Tours
                                         </p>
                                     </div>
                                     <div class="card-overlay bg-gradient"></div>
