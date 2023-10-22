@@ -86,7 +86,7 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                     </p>
 
 
-                    <div class="card rounded-sm overflow-hidden" data-card-height="400">
+                    <div class="splide single-slider slider-no-dots" id="single-slider-home">
                     <div class="splide__track">
                         <div class="splide__list">
 
