@@ -24,7 +24,7 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
         <div class="page-content header-clear-medium">
 
             <div class="card card-style">
-                <div class="splide single-slider slider-no-dots" id="single-slider-home">
+                <div class="splide single-slider slider-no-dots">
                     <div class="splide__track">
                         <div class="splide__list">
 
