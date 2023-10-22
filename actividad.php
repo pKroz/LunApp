@@ -34,24 +34,7 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                                         src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
                                 </div>
                             </div>
-                            <div class="splide__slide">
-                                <div class="card rounded-0 shadow-l">
-                                    <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img2.jpg">
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="card rounded-0 shadow-l">
-                                    <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img3.jpg">
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="card rounded-0 shadow-l">
-                                    <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img4.jpg">
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -86,12 +69,37 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
                     </p>
 
 
-                    <div class="card rounded-sm overflow-hidden" data-card-height="400">
-                        <div class="bg-black opacity-60"></div>
-                        <iframe
-                            src="<?php echo $dataActividad['embed']; ?>"
-                            style="height:400px;" frameborder='0' allowfullscreen></iframe>
+                    <div class="splide single-slider slider-no-dots" id="single-slider-home">
+                    <div class="splide__track">
+                        <div class="splide__list">
+
+                            <div class="splide__slide">
+                                <div class="card rounded-0 shadow-l">
+                                    <img class="img-fluid"
+                                        src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card rounded-0 shadow-l">
+                                    <img class="img-fluid"
+                                        src="images/media/<?php echo $dataActividad['id']; ?>_img2.jpg">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card rounded-0 shadow-l">
+                                    <img class="img-fluid"
+                                        src="images/media/<?php echo $dataActividad['id']; ?>_img3.jpg">
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card rounded-0 shadow-l">
+                                    <img class="img-fluid"
+                                        src="images/media/<?php echo $dataActividad['id']; ?>_img4.jpg">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
                     <div class="divider mb-4"></div>
                     <h3>Detalles</h3>
