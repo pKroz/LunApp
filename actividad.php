@@ -25,31 +25,18 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
 
             <div class="card card-style">
                 <div class="splide single-slider slider-no-dots" id="single-slider-home">
-                        
+                    <div class="splide__track">
+                        <div class="splide__list">
+
                             <div class="splide__slide">
                                 <div class="card rounded-0 shadow-l">
                                     <img class="img-fluid"
                                         src="images/media/<?php echo $dataActividad['id']; ?>_img1.jpg">
                                 </div>
                             </div>
-                            <div class="splide__slide">
-                                <div class="card rounded-0 shadow-l">
-                                    <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img2.jpg">
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="card rounded-0 shadow-l">
-                                    <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img3.jpg">
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="card rounded-0 shadow-l">
-                                    <img class="img-fluid"
-                                        src="images/media/<?php echo $dataActividad['id']; ?>_img4.jpg">
-                                </div>
-                            </div>
+                           
+                        </div>
+                    </div>
                 </div>
 
 
