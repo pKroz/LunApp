@@ -18,7 +18,7 @@
             <div class="card card-style">
 
                 <div class="content mt-n5 pt-3">
-                    <div class="divider mb-2"></div>
+                    <div class="divider mb-2 mt-5"></div>
                     <div class="row mb-2">
                     <div class="col-12">
                             <div class="d-flex">
