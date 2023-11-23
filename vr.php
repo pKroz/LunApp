@@ -16,7 +16,7 @@
                             <div class="col-12">
                                     <div class="d-flex">
                                         <i class="mt-1 fa fa-plus color-highlight font-14 fa-fw text-center"></i>
-                                        <strong class="font-13 ps-1 color-theme opacity-50 d-block">DNI: </strong><strong class="align-self-center ps-1 font-13 color-theme"><?php echo $dataCIISIC['dni']; ?></strong>
+                                        <iframe name="canetelab" src="https://framevr.io/canetelab" height="100%" width="100%" allow="camera;microphone;display-capture;xr-spatial-tracking" scrolling="no" frameBorder="0"></iframe>
                                     </div>
                             </div>
                         </div>
