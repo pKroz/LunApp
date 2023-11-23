@@ -21,7 +21,7 @@
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
     <div id="page">
-        <?php include_once './assets/header-footer-qr.php'?>
+    <?php include_once './assets/header-footer-menu.php'?>
         <div class="page-content header-clear-medium">
             <div class="card card-style">
                 <div class="content mt-n5 pt-3">
