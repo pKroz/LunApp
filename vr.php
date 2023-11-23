@@ -18,16 +18,6 @@
             <div class="card card-style">
 
                 <div class="content mt-n5 pt-3">
-                    <div>
-                        <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3"><?php echo $dataCIISIC['id']; ?></span>
-                        <div class="d-flex pb-0">
-                            <div class="align-self-center flex-grow-1">
-                                <strong class="color-theme font-20 d-block mt-0 mt-3 mb-3 pb-0"><i
-                                        class="fa fa-user pe-2"></i><?php echo $dataCIISIC['nombres']; ?> <?php echo $dataCIISIC['apellidos']; ?></strong>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="divider mb-2"></div>
                     <div class="row mb-2">
                     <div class="col-12">
