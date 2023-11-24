@@ -300,7 +300,7 @@ if (isset($_GET['op'])) {?>
       <a-assets>
         <audio id="click-sound" src="audio/click.ogg"></audio>
         <!-- Images. -->
-        <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
+        <img id="city" src="images/media/iglesia.jpg">
         <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
         <img id="cubes-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
