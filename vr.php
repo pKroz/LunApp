@@ -267,7 +267,8 @@ if (isset($_GET['op'])) {?>
 
 <?php } else { ?>
 <?php if (($_GET['op'])=='2') {?>
-    <html lang="es">
+    <!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -288,105 +289,104 @@ if (isset($_GET['op'])) {?>
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
     <title>LunApp - VR</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aframe-animation-component@5.0.0/dist/aframe-animation-component.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aframe-template-component@4.0.0/dist/aframe-template-component.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aframe-layout-component@4.0.0/dist/aframe-layout-component.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aframe-event-set-component@4.0.0/dist/aframe-event-set-component.min.js"></script>
-  </head>
-  <body>
-  
+    <script src="https://cdn.jsdelivr.net/npm/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-animation-component@5.0.0/dist/aframe-animation-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-template-component@4.0.0/dist/aframe-template-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-layout-component@4.0.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-event-set-component@4.0.0/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<body>
+
     <a-scene>
-      <a-assets>
-        <audio id="click-sound" src="audio/click.ogg"></audio>
-        <!-- Images. -->
-        <img id="city" src="images/media/iglesia.jpg">
-        <img id="city-thumb" src="images/media/iglesia-t.jpg">
-        <img id="cubes" src="images/media/plaza.jpg">
-        <img id="cubes-thumb" src="images/media/plaza-t.jpg">
-        <img id="sechelt" src="images/media/rio.jpg">
-        <img id="sechelt-thumb" src="images/media/rio-t.jpg">
+        <a-assets>
+            <audio id="click-sound" src="audio/click.ogg"></audio>
+            <!-- Images. -->
+            <img id="city" src="images/media/iglesia.jpg">
+            <img id="city-thumb" src="images/media/iglesia-t.jpg">
+            <img id="cubes" src="images/media/plaza.jpg">
+            <img id="cubes-thumb" src="images/media/plaza-t.jpg">
+            <img id="sechelt" src="images/media/rio.jpg">
+            <img id="sechelt-thumb" src="images/media/rio-t.jpg">
 
-        <script id="plane" type="text/html">
-          <a-entity class="link"
-          geometry="primitive: plane; height: 1: width: 1"
-          material="shader: flat; src: ${thumb}"
-          sound="on: click; src: #click-sound"
-          set-image="on: click; target: #image-360; src: ${image}"
-          event-set__1="_event: mousedown; scale: 1 1 1"
-          event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-          event-set__4="_event: mouseleave; scale: 1 1 1"></a-entity>
-        </script>
-      </a-assets>
-      <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#city"></a-sky>
-      <!-- Link we will build. -->
-      <a-entity id="links" layout="layout: line; margin: 1.5" position="-1.5 1 -2.5">
-        <a-entity template="src: #plane" data-thumb="#city-thumb" data-image="#city"></a-entity>
-        <a-entity template="src: #plane" data-thumb="#cubes-thumb" data-image="#cubes"></a-entity>
-        <a-entity template="src: #plane" data-thumb="#sechelt-thumb" data-image="#sechelt"></a-entity>
-      </a-entity>
-      <!-- Camera + Cursor. -->
-      <a-camera>
-        <a-cursor id="cursor">
-          <a-animation begin="click" easing="ease-in" attribute="scale"
-                       fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
-          <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
-                       from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
-        </a-cursor>
-      </a-camera>
+            <script id="plane" type="text/html">
+                <a-entity class="link" geometry="primitive: plane; height: 1: width: 1"
+                    material="shader: flat; src: ${thumb}" sound="on: click; src: #click-sound"
+                    set-image="on: click; target: #image-360; src: ${image}"
+                    event-set__1="_event: mousedown; scale: 1 1 1" event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+                    event-set__3="_event: mouseenter; scale: 1.2 1.2 1" event-set__4="_event: mouseleave; scale: 1 1 1">
+                </a-entity>
+            </script>
+        </a-assets>
+        <!-- 360-degree image. -->
+        <a-sky id="image-360" radius="10" src="#city"></a-sky>
+        <!-- Link we will build. -->
+        <a-entity id="links" layout="layout: line; margin: 1.5" position="-1.5 1 -2.5">
+            <a-entity template="src: #plane" data-thumb="#city-thumb" data-image="#city"></a-entity>
+            <a-entity template="src: #plane" data-thumb="#cubes-thumb" data-image="#cubes"></a-entity>
+            <a-entity template="src: #plane" data-thumb="#sechelt-thumb" data-image="#sechelt"></a-entity>
+        </a-entity>
+        <!-- Camera + Cursor. -->
+        <a-camera>
+            <a-cursor id="cursor">
+                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
+                    to="1 1 1" dur="150"></a-animation>
+                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" from="1 1 1" to="0.1 0.1 0.1"
+                    dur="1500"></a-animation>
+            </a-cursor>
+        </a-camera>
     </a-scene>
-    <script> 
-    AFRAME.registerComponent('set-image', {
-  
-  schema: {
-    on: {type: 'string'},
-    target: {type: 'selector'},
-    src: {type: 'string'},
-    dur: {type: 'number', default: 300}
-  },
-  
-  init: function () {
-    console.log('set-image init')
-    const data = this.data;
-    const el = this.el;
-    
-    this.setupFadeAnimation();
-    
-    el.addEventListener(data.on, function () {
-      console.log("clicked");
-      // Fade out image.
-      data.target.emit('set-image-fade');
-      // Wait for fade to complete.
-      setTimeout(function () {
-        // Set image.
-        data.target.setAttribute('material', 'src', data.src);
-      }, data.dur);
-    });
-  },
-  
-  setupFadeAnimation: function () {
-    const data = this.data;
-    const targetEl = this.data.target;
+    <script>
+        AFRAME.registerComponent('set-image', {
 
-    // Only set up once.
-    if (targetEl.dataset.setImageFadeSetup) { return; }
-    targetEl.dataset.setImageFadeSetup = true;
+            schema: {
+                on: { type: 'string' },
+                target: { type: 'selector' },
+                src: { type: 'string' },
+                dur: { type: 'number', default: 300 }
+            },
 
-    // Create animation.
-    targetEl.setAttribute('animation__fade', {
-      property: 'material.color',
-      startEvents: 'set-image-fade',
-      dir: 'alternate',
-      dur: data.dur,
-      from: '#FFF',
-      to: '#000'
-    });
-  }
-});
+            init: function () {
+                console.log('set-image init')
+                const data = this.data;
+                const el = this.el;
+
+                this.setupFadeAnimation();
+
+                el.addEventListener(data.on, function () {
+                    console.log("clicked");
+                    // Fade out image.
+                    data.target.emit('set-image-fade');
+                    // Wait for fade to complete.
+                    setTimeout(function () {
+                        // Set image.
+                        data.target.setAttribute('material', 'src', data.src);
+                    }, data.dur);
+                });
+            },
+
+            setupFadeAnimation: function () {
+                const data = this.data;
+                const targetEl = this.data.target;
+
+                // Only set up once.
+                if (targetEl.dataset.setImageFadeSetup) { return; }
+                targetEl.dataset.setImageFadeSetup = true;
+
+                // Create animation.
+                targetEl.setAttribute('animation__fade', {
+                    property: 'material.color',
+                    startEvents: 'set-image-fade',
+                    dir: 'alternate',
+                    dur: data.dur,
+                    from: '#FFF',
+                    to: '#000'
+                });
+            }
+        });
     </script>
-  </body>
+</body>
+
 </html>
 
 <?php } else { ?>
