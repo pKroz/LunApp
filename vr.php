@@ -50,6 +50,11 @@
                     </div>
                 </div>
             </div>
+            <div class="card rounded-sm overflow-hidden mb-0">
+                        <div class="bg-black opacity-60"></div>
+                        <>Pantalla Completa</button>
+                        <button class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase" onclick="toggleFullscreen()">VER COMPROBANTE DE PAGO</button>
+            </div>
             <div class="footer card card-style">
                 <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                 <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el Semillero de
@@ -230,4 +235,18 @@
     </div>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
+    <script>
+        function toggleFullscreen() {
+    var iframe = document.getElementById("canetelab");
+    if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+    } else if (iframe.mozRequestFullScreen) { /* Firefox */
+        iframe.mozRequestFullScreen();
+    } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) { /* IE/Edge */
+        iframe.msRequestFullscreen();
+    }
+}
+    </script>
 </body>
