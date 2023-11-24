@@ -304,7 +304,7 @@ if (isset($_GET['op'])) {?>
         <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes" src="images/media/plaza.jpg">
         <img id="cubes-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-        <img id="sechelt" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+        <img id="sechelt" src="images/media/rio.jpg">
         <img id="sechelt-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
 
         <script id="plane" type="text/html">
@@ -452,6 +452,14 @@ if (isset($_GET['op'])) {?>
                     <p class="text-center color-highlight font-11 mt-n1 pb-0">Visualiza los lugares destacados de Lunahuana.</p>
                     <a href="https://app.pkroz.net/vr.php?op=2"
                         class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Ver lugares destacados</a>
+                </div>
+            </div>
+            <div class="card card-style">
+                <div class="content mb-0">
+                    <h1 class="text-center mb-0">Actividades destacadas</h1>
+                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Visualiza las actividades en Lunahuana.</p>
+                    <a href="https://app.pkroz.net/vr.php?op=3"
+                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Ver actividades destacados</a>
                 </div>
             </div>
             <div class="footer card card-style">
