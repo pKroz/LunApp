@@ -267,7 +267,7 @@ if (isset($_GET['op'])) {?>
 
 <?php } else { ?>
 <?php if (($_GET['op'])=='2') {?>
-<html lang="es">
+    <html lang="es">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
