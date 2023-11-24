@@ -287,7 +287,7 @@ if (isset($_GET['op'])) {?>
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
     <title>LunApp - VR</title>
-    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
     <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
@@ -420,7 +420,7 @@ if (isset($_GET['op'])) {?>
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
     <title>LunApp - VR</title>
-    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
     <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
