@@ -271,115 +271,47 @@ if (isset($_GET['op'])) {?>
 <html lang="es">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
-    <script type="text/javascript" src="scripts/xd.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
-    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
-    <link rel="shortcut icon" href="app/icons/favicon.ico" />
-    <title>LunApp - VR</title>
+    <meta charset="UTF-8">
+    <title>Galería de Imágenes 360</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    
 </head>
 
 <body>
-
     <a-scene>
+        <!-- Imágenes de 360 grados -->
         <a-assets>
-            <audio id="click-sound" src="audio/click.ogg"></audio>
-            <!-- Images. -->
-            <img id="city" src="images/media/iglesia.jpg">
-            <img id="city-thumb" src="images/media/iglesia-t.jpg">
-            <img id="cubes" src="images/media/plaza.jpg">
-            <img id="cubes-thumb" src="images/media/plaza-t.jpg">
-            <img id="sechelt" src="images/media/rio.jpg">
-            <img id="sechelt-thumb" src="images/media/rio-t.jpg">
-
-            <script id="plane" type="text/html">
-                <a-entity class="link" geometry="primitive: plane; height: 1: width: 1"
-                    material="shader: flat; src: ${thumb}" sound="on: click; src: #click-sound"
-                    set-image="on: click; target: #image-360; src: ${image}"
-                    event-set__1="_event: mousedown; scale: 1 1 1" event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-                    event-set__3="_event: mouseenter; scale: 1.2 1.2 1" event-set__4="_event: mouseleave; scale: 1 1 1">
-                </a-entity>
-            </script>
+            <img id="image1" src="ruta_imagen1.jpg">
+            <img id="image2" src="ruta_imagen2.jpg">
+            <img id="image3" src="ruta_imagen3.jpg">
+            <!-- Agrega más imágenes aquí -->
         </a-assets>
-        <!-- 360-degree image. -->
-        <a-sky id="image-360" radius="10" src="#city"></a-sky>
-        <!-- Link we will build. -->
-        <a-entity id="links" layout="layout: line; margin: 1.5" position="-1.5 1 -2.5">
-            <a-entity template="src: #plane" data-thumb="#city-thumb" data-image="#city"></a-entity>
-            <a-entity template="src: #plane" data-thumb="#cubes-thumb" data-image="#cubes"></a-entity>
-            <a-entity template="src: #plane" data-thumb="#sechelt-thumb" data-image="#sechelt"></a-entity>
+
+        <!-- Cielo inicial -->
+        <a-sky src="#image1"></a-sky>
+
+        <!-- Botones de cambio de imagen -->
+        <a-entity position="-2 1.8 -5">
+            <a-box color="blue" depth="0.1" height="0.5" width="1" onClick="changeImage('image1')"></a-box>
+            <a-text align="center" position="0 0.1 0" value="Imagen 1"></a-text>
         </a-entity>
-        <!-- Camera + Cursor. -->
-        <a-camera>
-            <a-cursor id="cursor">
-                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
-                    to="1 1 1" dur="150"></a-animation>
-                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" from="1 1 1" to="0.1 0.1 0.1"
-                    dur="1500"></a-animation>
-            </a-cursor>
-        </a-camera>
+
+        <a-entity position="0 1.8 -5">
+            <a-box color="green" depth="0.1" height="0.5" width="1" onClick="changeImage('image2')"></a-box>
+            <a-text align="center" position="0 0.1 0" value="Imagen 2"></a-text>
+        </a-entity>
+
+        <a-entity position="2 1.8 -5">
+            <a-box color="red" depth="0.1" height="0.5" width="1" onClick="changeImage('image3')"></a-box>
+            <a-text align="center" position="0 0.1 0" value="Imagen 3"></a-text>
+        </a-entity>
     </a-scene>
+
     <script>
-        AFRAME.registerComponent('set-image', {
-
-            schema: {
-                on: { type: 'string' },
-                target: { type: 'selector' },
-                src: { type: 'string' },
-                dur: { type: 'number', default: 300 }
-            },
-
-            init: function () {
-                console.log('set-image init')
-                const data = this.data;
-                const el = this.el;
-
-                this.setupFadeAnimation();
-
-                el.addEventListener(data.on, function () {
-                    console.log("clicked");
-                    // Fade out image.
-                    data.target.emit('set-image-fade');
-                    // Wait for fade to complete.
-                    setTimeout(function () {
-                        // Set image.
-                        data.target.setAttribute('material', 'src', data.src);
-                    }, data.dur);
-                });
-            },
-
-            setupFadeAnimation: function () {
-                const data = this.data;
-                const targetEl = this.data.target;
-
-                // Only set up once.
-                if (targetEl.dataset.setImageFadeSetup) { return; }
-                targetEl.dataset.setImageFadeSetup = true;
-
-                // Create animation.
-                targetEl.setAttribute('animation__fade', {
-                    property: 'material.color',
-                    startEvents: 'set-image-fade',
-                    dir: 'alternate',
-                    dur: data.dur,
-                    from: '#FFF',
-                    to: '#000'
-                });
-            }
-        });
+        function changeImage(imageId) {
+            var sky = document.querySelector('a-sky');
+            sky.setAttribute('src', '#' + imageId);
+        }
     </script>
 </body>
 
