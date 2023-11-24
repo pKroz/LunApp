@@ -69,7 +69,7 @@ while ($dataActividad = mysqli_fetch_array($queryActividades)) { ?>
 
                             </div>
                             <div class="align-self-center flex-shrink-1">
-                                <a href="#"
+                                <a href="https://app.pkroz.net/vr.php"
                                     class="btn btn-full btn-sm font-900 text-uppercase rounded-sm shadow-xxl bg-highlight mb-3 d-flex justify-content-center"><i
                                         class="fa fa-vr-cardboard pe-2 me-1 font-15 color-white"></i>Tour</a>
                             </div>

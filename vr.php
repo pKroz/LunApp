@@ -1,6 +1,6 @@
 <?php
 // Comprueba si se ha proporcionado idProyecto a través de GET
-if (isset($_GET['idProyecto'])) {?>
+if (isset($_GET['opcion'])) {?>
 
 <?php if (($_GET['opcion'])=='1') {?>
 
