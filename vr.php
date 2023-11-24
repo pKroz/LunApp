@@ -296,7 +296,7 @@ if (isset($_GET['op'])) {?>
     <script src="images/media/aframe-layout-component%404.3.1/dist/aframe-layout-component.min.js"></script>
     <script src="images/media/unpkg.com/aframe-event-set-component%405.0.0/dist/aframe-event-set-component.min.js">
     </script>
-    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss">
+    
     </script>
 
     <script id="link" type="text/html">
