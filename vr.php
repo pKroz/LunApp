@@ -269,53 +269,51 @@ if (isset($_GET['op'])) {?>
 <?php if (($_GET['op'])=='2') {?>
     <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Galería de Imágenes 360</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Galería de Imágenes 360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 </head>
-
 <body>
-    <a-scene>
-        <!-- Imágenes de 360 grados -->
-        <a-assets>
-            <img id="image1" src="ruta_imagen1.jpg">
-            <img id="image2" src="ruta_imagen2.jpg">
-            <img id="image3" src="ruta_imagen3.jpg">
-            <!-- Agrega más imágenes aquí -->
-        </a-assets>
+  <a-scene>
+    <!-- Imágenes de 360 grados -->
+    <a-assets>
+      <img id="image1" src="ruta_imagen1.jpg">
+      <img id="image2" src="ruta_imagen2.jpg">
+      <img id="image3" src="ruta_imagen3.jpg">
+      <!-- Agrega más imágenes aquí -->
+    </a-assets>
 
-        <!-- Cielo inicial -->
-        <a-sky src="#image1"></a-sky>
+    <!-- Cielo inicial -->
+    <a-sky src="#image1"></a-sky>
 
-        <!-- Botones de cambio de imagen -->
-        <a-entity position="-2 1.8 -5">
-            <a-box color="blue" depth="0.1" height="0.5" width="1" onClick="changeImage('image1')"></a-box>
-            <a-text align="center" position="0 0.1 0" value="Imagen 1"></a-text>
-        </a-entity>
+    <!-- Botones de cambio de imagen -->
+    <a-entity position="-2 1.8 -5">
+      <a-box color="blue" depth="0.1" height="0.5" width="1" onclick="changeImage('image1')"></a-box>
+      <a-text align="center" position="0 0.1 0" value="Imagen 1"></a-text>
+    </a-entity>
 
-        <a-entity position="0 1.8 -5">
-            <a-box color="green" depth="0.1" height="0.5" width="1" onClick="changeImage('image2')"></a-box>
-            <a-text align="center" position="0 0.1 0" value="Imagen 2"></a-text>
-        </a-entity>
+    <a-entity position="0 1.8 -5">
+      <a-box color="green" depth="0.1" height="0.5" width="1" onclick="changeImage('image2')"></a-box>
+      <a-text align="center" position="0 0.1 0" value="Imagen 2"></a-text>
+    </a-entity>
 
-        <a-entity position="2 1.8 -5">
-            <a-box color="red" depth="0.1" height="0.5" width="1" onClick="changeImage('image3')"></a-box>
-            <a-text align="center" position="0 0.1 0" value="Imagen 3"></a-text>
-        </a-entity>
-    </a-scene>
+    <a-entity position="2 1.8 -5">
+      <a-box color="red" depth="0.1" height="0.5" width="1" onclick="changeImage('image3')"></a-box>
+      <a-text align="center" position="0 0.1 0" value="Imagen 3"></a-text>
+    </a-entity>
+  </a-scene>
 
-    <script>
-        function changeImage(imageId) {
-            var sky = document.querySelector('a-sky');
-            sky.setAttribute('src', '#' + imageId);
-        }
-    </script>
+  <script>
+    function changeImage(imageId) {
+      var sky = document.querySelector('a-sky');
+      sky.setAttribute('src', '#' + imageId);
+    }
+  </script>
 </body>
-
 </html>
+
 
 <?php } else { ?>
 <?php if (($_GET['op'])=='3') {?>
