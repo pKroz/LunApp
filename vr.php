@@ -392,51 +392,41 @@ if (isset($_GET['op'])) {?>
 <?php } else { ?>
 <?php if (($_GET['op'])=='3') {?>
     <!DOCTYPE html>
-<html lang="es">
+<html>
+
+<!-- Mirrored from aframe.io/aframe/examples/boilerplate/360-video/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:33:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-    <meta charset="UTF-8">
-    <title>Video 360</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
+<meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M59+)" data-expires="2017-07-28" content="ArFv1ZeTwzkhjNE00uAE+XtiQB41fwqG/TqlFMLrepd9sforQSvQE/tgfIbUMYNuNre4QR1k4/z8xp2mV3dbhwwAAABeeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjEiLCJleHBpcnkiOjE1MDEyMTcwMDIsImlzU3ViZG9tYWluIjp0cnVlfQ==">
+<meta charset="utf-8">
+<title>360 Video</title>
+<meta name="description" content="360 Video — A-Frame">
+<script src="images/media/aframe-master.min.js"></script>
+<script src="images/media/play-on-click.js"></script>
+<script src="images/media/hide-on-play.js"></script>
 </head>
 <body>
-    <a-scene cursor="rayOrigin: mouse">
-        <!-- Cielo inicial con mensaje -->
-        <a-sky id="video-sky" src="#loading-text" rotation="0 -90 0"></a-sky>
-        
-        <!-- Mensaje para hacer clic -->
-        <a-text id="loading-text" align="center" position="0 2 -5" color="white" value="Haz clic para entrar"></a-text>
-        
-        <!-- Video 360 -->
-        <a-video id="360-video" src="images/media/canotaje360.mp4" rotation="0 -90 0" scale="2 2 2"></a-video>
-        
-        <!-- Evento para cambiar a pantalla completa al hacer clic -->
-        <a-entity id="video-container" position="0 0 -4" scale="2 2 2" visible="false" cursor-listener>
-            <a-video src="images/media/canotaje360.mp4" rotation="0 -90 0"></a-video>
-        </a-entity>
-    </a-scene>
+<a-scene>
+<a-assets>
 
-    <script>
-        AFRAME.registerComponent('cursor-listener', {
-            init: function () {
-                var el = this.el;
-                el.addEventListener('click', function () {
-                    var videoContainer = document.getElementById('video-container');
-                    var videoSky = document.getElementById('video-sky');
-                    var loadingText = document.getElementById('loading-text');
-
-                    // Oculta el mensaje de carga y el cielo inicial
-                    loadingText.setAttribute('visible', 'false');
-                    videoSky.setAttribute('visible', 'false');
-
-                    // Muestra el video 360 en pantalla completa
-                    videoContainer.setAttribute('visible', 'true');
-                    videoContainer.requestFullscreen();
-                });
-            }
-        });
-    </script>
+<video id="video" loop crossorigin="anonymous" playsinline webkit-playsinline src="https://bitmovin-a.akamaihd.net/content/playhouse-vr/progressive.mp4">
+</video>
+</a-assets>
+<a-videosphere rotation="0 -90 0" src="#video" play-on-click>
+</a-videosphere>
+<a-camera>
+<a-entity position="0 0 -1.5" text="align:center;
+                width:6;
+                wrapCount:100;
+                color: white;
+                value: Click or tap to start video" hide-on-play="#video">
+</a-entity>
+</a-camera>
+</a-scene>
 </body>
+
+<!-- Mirrored from aframe.io/aframe/examples/boilerplate/360-video/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:33:14 GMT -->
 </html>
 <?php } else { ?>
 <?php if (($_GET['op'])=='4') {?>
