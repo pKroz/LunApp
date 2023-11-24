@@ -446,7 +446,14 @@ if (isset($_GET['op'])) {?>
                         al mundo virtual</a>
                 </div>
             </div>
-
+            <div class="card card-style">
+                <div class="content mb-0">
+                    <h1 class="text-center mb-0">Lugares destacados</h1>
+                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Visualiza los lugares destacados de Lunahuana.</p>
+                    <a href="https://app.pkroz.net/vr.php?op=2"
+                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Ver lugares destacados</a>
+                </div>
+            </div>
             <div class="footer card card-style">
                 <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                 <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el Semillero de
