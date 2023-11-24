@@ -1,8 +1,8 @@
 <?php
 // Comprueba si se ha proporcionado idProyecto a través de GET
-if (isset($_GET['opcion'])) {?>
+if (isset($_GET['op'])) {?>
 
-<?php if (($_GET['opcion'])=='1') {?>
+<?php if (($_GET['op'])=='1') {?>
 
 <!DOCTYPE HTML>
 <html lang="es">
@@ -310,15 +310,13 @@ if (isset($_GET['opcion'])) {?>
         <div class="page-content header-clear-medium">
             <div class="card card-style">
                 <div class="content mb-0">
-                    <h1 class="text-center mb-0">Get Sticky Today</h1>
-                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Tons of Awesome Features just for You.</p>
+                    <h1 class="text-center mb-0">Mundo virtual</h1>
+                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Obten información acerca de las actividades.</p>
                     <p class="boxed-text-xl mt-n3">
-                        Fast, easy to use and filled with features. Get Sticky Today and give your site the Mobile
-                        Feeling it deserves.
+                        En este mundo virtual puedes interactuar con más personas, aqui puedes obtener información y demás cosas.
                     </p>
-                    <a href="#"
-                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Purchase
-                        Now - $25</a>
+                    <a href="https://app.pkroz.net/vr.php?op=1"
+                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Realizar tour en mundo virtual</a>
                 </div>
             </div>
 
