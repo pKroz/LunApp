@@ -311,12 +311,9 @@ if (isset($_GET['op'])) {?>
             <div class="card card-style">
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Mundo virtual</h1>
-                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Obten información acerca de las actividades.</p>
-                    <p class="boxed-text-xl mt-n3">
-                        En este mundo virtual puedes interactuar con más personas, aqui puedes obtener información y demás cosas.
-                    </p>
+                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Obten información acerca de las actividades en este mundo virtual.</p>
                     <a href="https://app.pkroz.net/vr.php?op=1"
-                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Realizar tour en mundo virtual</a>
+                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Entrar al mundo virtual</a>
                 </div>
             </div>
 
