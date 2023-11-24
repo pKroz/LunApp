@@ -289,11 +289,7 @@ if (isset($_GET['op'])) {?>
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
     <title>LunApp - VR</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-animation-component@5.0.0/dist/aframe-animation-component.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-template-component@4.0.0/dist/aframe-template-component.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-layout-component@4.0.0/dist/aframe-layout-component.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-event-set-component@4.0.0/dist/aframe-event-set-component.min.js"></script>
+    
 </head>
 
 <body>
