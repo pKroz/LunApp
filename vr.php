@@ -301,11 +301,11 @@ if (isset($_GET['op'])) {?>
         <audio id="click-sound" src="audio/click.ogg"></audio>
         <!-- Images. -->
         <img id="city" src="images/media/iglesia.jpg">
-        <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+        <img id="city-thumb" src="images/media/iglesia-t.jpg">
         <img id="cubes" src="images/media/plaza.jpg">
-        <img id="cubes-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
+        <img id="cubes-thumb" src="images/media/plaza-t.jpg">
         <img id="sechelt" src="images/media/rio.jpg">
-        <img id="sechelt-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+        <img id="sechelt-thumb" src="images/media/rio-t.jpg">
 
         <script id="plane" type="text/html">
           <a-entity class="link"
