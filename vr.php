@@ -432,7 +432,7 @@ if (isset($_GET['op'])) {?>
 
 <a-scene>
 <a-assets>
-<video id="video" src="http://dev.nydelpics.com/360/360.mp4"
+<video id="video" src="images/media/canotaje360.mp4"
                autoplay loop crossorigin="anonymous"></video>
 </a-assets>
 
