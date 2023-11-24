@@ -317,7 +317,7 @@ if (isset($_GET['op'])) {?>
                     <div class="divider mb-2 mt-5"></div>
                     <div class="row mb-2">
                         <div class="col-12">
-                            <div class="d-flex">
+                            <div class="d-flex" height="600">
                                 <a-scene height="600">
                                     <a-assets>
                                         <audio id="click-sound" src="audio/click.ogg"></audio>
