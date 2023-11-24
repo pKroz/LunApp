@@ -391,7 +391,53 @@ if (isset($_GET['op'])) {?>
 
 <?php } else { ?>
 <?php if (($_GET['op'])=='3') {?>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Video 360</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene cursor="rayOrigin: mouse">
+        <!-- Cielo inicial con mensaje -->
+        <a-sky id="video-sky" src="#loading-text" rotation="0 -90 0"></a-sky>
+        
+        <!-- Mensaje para hacer clic -->
+        <a-text id="loading-text" align="center" position="0 2 -5" color="white" value="Haz clic para entrar"></a-text>
+        
+        <!-- Video 360 -->
+        <a-video id="360-video" src="ruta_video360.mp4" rotation="0 -90 0" scale="2 2 2"></a-video>
+        
+        <!-- Evento para cambiar a pantalla completa al hacer clic -->
+        <a-entity id="video-container" position="0 0 -4" scale="2 2 2" visible="false" cursor-listener>
+            <a-video src="ruta_video360.mp4" rotation="0 -90 0"></a-video>
+        </a-entity>
+    </a-scene>
 
+    <script>
+        AFRAME.registerComponent('cursor-listener', {
+            init: function () {
+                var el = this.el;
+                el.addEventListener('click', function () {
+                    var videoContainer = document.getElementById('video-container');
+                    var videoSky = document.getElementById('video-sky');
+                    var loadingText = document.getElementById('loading-text');
+
+                    // Oculta el mensaje de carga y el cielo inicial
+                    loadingText.setAttribute('visible', 'false');
+                    videoSky.setAttribute('visible', 'false');
+
+                    // Muestra el video 360 en pantalla completa
+                    videoContainer.setAttribute('visible', 'true');
+                    videoContainer.requestFullscreen();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
 <?php } else { ?>
 <?php if (($_GET['op'])=='4') {?>
 
