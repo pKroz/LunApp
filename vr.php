@@ -44,7 +44,7 @@
                     <div class="row mb-2">
                         <div class="col-12">
                             <div class="d-flex">
-                            <iframe name="canetelab" src="https://framevr.io/canetelab" height="800px" width="100%" allow="camera;microphone;display-capture;xr-spatial-tracking" scrolling="no" frameborder="0"></iframe>
+                            <iframe  id="canetelab" name="canetelab" src="https://framevr.io/canetelab" height="800px" width="100%" allow="camera;microphone;display-capture;xr-spatial-tracking" scrolling="no" frameborder="0"></iframe>
                             </div>
                         </div>
                     </div>
