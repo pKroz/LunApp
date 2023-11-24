@@ -268,6 +268,8 @@ if (isset($_GET['op'])) {?>
 <?php } else { ?>
 <?php if (($_GET['op'])=='2') {?>
 <html lang="es">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -287,113 +289,56 @@ if (isset($_GET['op'])) {?>
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
     <title>LunApp - VR</title>
-    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-layout-component@3.x.x/dist/aframe-layout-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-event-set-component@3.x.x/dist/aframe-event-set-component.min.js"></script>
+    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+
+    <script src="images/media/aframe-master.min1.js"></script>
+    <script src="images/media/aframe-template-component%403.2.2/dist/aframe-template-component.min.js"></script>
+    <script src="images/media/aframe-layout-component%404.3.1/dist/aframe-layout-component.min.js"></script>
+    <script src="images/media/unpkg.com/aframe-event-set-component%405.0.0/dist/aframe-event-set-component.min.js">
+    </script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss">
+    </script>
+
+    <script id="link" type="text/html">
+    <a-entity class="link" geometry="primitive: plane; height: 1; width: 1" material="shader: flat; src: ${thumb}"
+        sound="on: click; src: #click-sound" event-set__mouseenter="scale: 1.2 1.2 1"
+        event-set__mouseleave="scale: 1 1 1" event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
+        proxy-event="event: click; to: #image-360; as: fade"></a-entity>
+    </script>
 </head>
 
 <body>
-
     <a-scene>
         <a-assets>
-            <audio id="click-sound" src="audio/click.ogg"></audio>
-            <!-- Images. -->
-            <img id="city" src="images/media/iglesia.jpg">
-            <img id="city-thumb" src="images/media/iglesia-t.jpg">
-            <img id="cubes" src="images/media/plaza.jpg">
-            <img id="cubes-thumb" src="images/media/plaza-t.jpg">
-            <img id="sechelt" src="images/media/rio.jpg">
-            <img id="sechelt-thumb" src="images/media/rio-t.jpg">
-
-            <script id="plane" type="text/html">
-            <a-entity class="link" geometry="primitive: plane; height: 1: width: 1"
-                material="shader: flat; src: ${thumb}" sound="on: click; src: #click-sound"
-                set-image="on: click; target: #image-360; src: ${image}" event-set__1="_event: mousedown; scale: 1 1 1"
-                event-set__2="_event: mouseup; scale: 1.2 1.2 1" event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-                event-set__4="_event: mouseleave; scale: 1 1 1"></a-entity>
-            </script>
+            <img id="city" crossorigin="anonymous" src="images/media/iglesia.jpg">
+            <img id="city-thumb" crossorigin="anonymous" src="images/media/iglesia-t.jpg">
+            <img id="cubes-thumb" crossorigin="anonymous" src="images/media/plaza-t.jpg">
+            <img id="sechelt-thumb" crossorigin="anonymous" src="images/media/rio-t.jpg">
+            <audio id="click-sound" crossorigin="anonymous"
+                src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+            <img id="cubes" crossorigin="anonymous" src="images/media/plaza.jpg">
+            <img id="sechelt" crossorigin="anonymous" src="images/media/rio.jpg">
         </a-assets>
-        <!-- 360-degree image. -->
-        <a-sky id="image-360" radius="10" src="#city"></a-sky>
-        <!-- Link we will build. -->
-        <a-entity id="links" layout="layout: line; margin: 1.5" position="-1.5 1 -2.5">
-            <a-entity template="src: #plane" data-thumb="#city-thumb" data-image="#city"></a-entity>
-            <a-entity template="src: #plane" data-thumb="#cubes-thumb" data-image="#cubes"></a-entity>
-            <a-entity template="src: #plane" data-thumb="#sechelt-thumb" data-image="#sechelt"></a-entity>
+
+        <a-sky id="image-360" radius="10" src="#city"
+            animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
+            animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade">
+        </a-sky>
+
+        <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 -1 -4">
+            <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
+            <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
+            <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
         </a-entity>
-        <!-- Camera + Cursor. -->
-        <a-camera>
-            <a-cursor id="cursor">
-                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
-                    to="1 1 1" dur="150"></a-animation>
-                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" from="1 1 1" to="0.1 0.1 0.1"
-                    dur="1500"></a-animation>
-            </a-cursor>
-        </a-camera>
+
+        <a-entity camera look-controls>
+            <a-cursor id="cursor"
+                animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+                animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+                event-set__mouseenter="_event: mouseenter; color: springgreen"
+                event-set__mouseleave="_event: mouseleave; color: black" raycaster="objects: .link"></a-cursor>
+        </a-entity>
     </a-scene>
-    <script>
-    AFRAME.registerComponent('set-image', {
-
-        schema: {
-            on: {
-                type: 'string'
-            },
-            target: {
-                type: 'selector'
-            },
-            src: {
-                type: 'string'
-            },
-            dur: {
-                type: 'number',
-                default: 300
-            }
-        },
-
-        init: function() {
-            console.log('set-image init')
-            const data = this.data;
-            const el = this.el;
-
-            this.setupFadeAnimation();
-
-            el.addEventListener(data.on, function() {
-                console.log("clicked");
-                // Fade out image.
-                data.target.emit('set-image-fade');
-                // Wait for fade to complete.
-                setTimeout(function() {
-                    // Set image.
-                    data.target.setAttribute('material', 'src', data.src);
-                }, data.dur);
-            });
-        },
-
-        setupFadeAnimation: function() {
-            const data = this.data;
-            const targetEl = this.data.target;
-
-            // Only set up once.
-            if (targetEl.dataset.setImageFadeSetup) {
-                return;
-            }
-            targetEl.dataset.setImageFadeSetup = true;
-
-            // Create animation.
-            targetEl.setAttribute('animation__fade', {
-                property: 'material.color',
-                startEvents: 'set-image-fade',
-                dir: 'alternate',
-                dur: data.dur,
-                from: '#FFF',
-                to: '#000'
-            });
-        }
-    });
-    </script>
 </body>
 
 </html>
@@ -441,7 +386,7 @@ if (isset($_GET['op'])) {?>
                 width:6;
                 wrapCount:100;
                 color: white;
-                value: Click or tap to start video" hide-on-play="#video">
+                value: Click para empezar" hide-on-play="#video">
             </a-entity>
         </a-camera>
     </a-scene>
