@@ -48,13 +48,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card rounded-sm overflow-hidden mb-0">
+                        <div class="bg-black opacity-60"></div>
+                        <button class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase" onclick="toggleFullscreen()">Pantalla Completa</button>
+                    </div>
                 </div>
             </div>
-            <div class="card rounded-sm overflow-hidden mb-0">
-                        <div class="bg-black opacity-60"></div>
-                
-                        <button class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase" onclick="toggleFullscreen()">Pantalla Completa</button>
-            </div>
+            
             <div class="footer card card-style">
                 <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                 <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el Semillero de
