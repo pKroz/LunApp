@@ -292,9 +292,9 @@ if (isset($_GET['op'])) {?>
     <meta name="description" content="360&deg; Image Gallery - A-Frame">
 
     <script src="images/media/aframe-master1.min.js"></script>
-    <script src="images/media/aframe-template-component%403.2.2/dist/aframe-template-component.min.js"></script>
-    <script src="images/media/aframe-layout-component%404.3.1/dist/aframe-layout-component.min.js"></script>
-    <script src="images/media/unpkg.com/aframe-event-set-component%405.0.0/dist/aframe-event-set-component.min.js">
+    <script src="images/media/aframe-template-component.min.js"></script>
+    <script src="images/media/aframe-layout-component.min.js"></script>
+    <script src="images/media/aframe-event-set-component.min.js">
     </script>
     <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.jss">
     </script>
