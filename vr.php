@@ -267,6 +267,139 @@ if (isset($_GET['op'])) {?>
 
 <?php } else { ?>
 <?php if (($_GET['op'])=='2') {?>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <script type="text/javascript" src="scripts/xd.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <link rel="shortcut icon" href="app/icons/favicon.ico" />
+    <title>LunApp - VR</title>
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@3.x.x/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.x.x/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<body>
+
+    <a-scene>
+        <a-assets>
+            <audio id="click-sound" src="audio/click.ogg"></audio>
+            <!-- Images. -->
+            <img id="city" src="images/media/iglesia.jpg">
+            <img id="city-thumb" src="images/media/iglesia-t.jpg">
+            <img id="cubes" src="images/media/plaza.jpg">
+            <img id="cubes-thumb" src="images/media/plaza-t.jpg">
+            <img id="sechelt" src="images/media/rio.jpg">
+            <img id="sechelt-thumb" src="images/media/rio-t.jpg">
+
+            <script id="plane" type="text/html">
+            <a-entity class="link" geometry="primitive: plane; height: 1: width: 1"
+                material="shader: flat; src: ${thumb}" sound="on: click; src: #click-sound"
+                set-image="on: click; target: #image-360; src: ${image}" event-set__1="_event: mousedown; scale: 1 1 1"
+                event-set__2="_event: mouseup; scale: 1.2 1.2 1" event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+                event-set__4="_event: mouseleave; scale: 1 1 1"></a-entity>
+            </script>
+        </a-assets>
+        <!-- 360-degree image. -->
+        <a-sky id="image-360" radius="10" src="#city"></a-sky>
+        <!-- Link we will build. -->
+        <a-entity id="links" layout="layout: line; margin: 1.5" position="-1.5 1 -2.5">
+            <a-entity template="src: #plane" data-thumb="#city-thumb" data-image="#city"></a-entity>
+            <a-entity template="src: #plane" data-thumb="#cubes-thumb" data-image="#cubes"></a-entity>
+            <a-entity template="src: #plane" data-thumb="#sechelt-thumb" data-image="#sechelt"></a-entity>
+        </a-entity>
+        <!-- Camera + Cursor. -->
+        <a-camera>
+            <a-cursor id="cursor">
+                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
+                    to="1 1 1" dur="150"></a-animation>
+                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" from="1 1 1" to="0.1 0.1 0.1"
+                    dur="1500"></a-animation>
+            </a-cursor>
+        </a-camera>
+    </a-scene>
+    <script>
+    AFRAME.registerComponent('set-image', {
+
+        schema: {
+            on: {
+                type: 'string'
+            },
+            target: {
+                type: 'selector'
+            },
+            src: {
+                type: 'string'
+            },
+            dur: {
+                type: 'number',
+                default: 300
+            }
+        },
+
+        init: function() {
+            console.log('set-image init')
+            const data = this.data;
+            const el = this.el;
+
+            this.setupFadeAnimation();
+
+            el.addEventListener(data.on, function() {
+                console.log("clicked");
+                // Fade out image.
+                data.target.emit('set-image-fade');
+                // Wait for fade to complete.
+                setTimeout(function() {
+                    // Set image.
+                    data.target.setAttribute('material', 'src', data.src);
+                }, data.dur);
+            });
+        },
+
+        setupFadeAnimation: function() {
+            const data = this.data;
+            const targetEl = this.data.target;
+
+            // Only set up once.
+            if (targetEl.dataset.setImageFadeSetup) {
+                return;
+            }
+            targetEl.dataset.setImageFadeSetup = true;
+
+            // Create animation.
+            targetEl.setAttribute('animation__fade', {
+                property: 'material.color',
+                startEvents: 'set-image-fade',
+                dir: 'alternate',
+                dur: data.dur,
+                from: '#FFF',
+                to: '#000'
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>
+
+<?php } else { ?>
+<?php if (($_GET['op'])=='3') {?>
     <html lang="es">
 
 <head>
@@ -293,109 +426,24 @@ if (isset($_GET['op'])) {?>
     <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
     <script src="https://unpkg.com/aframe-layout-component@3.x.x/dist/aframe-layout-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.x.x/dist/aframe-event-set-component.min.js"></script>
-  </head>
-  <body>
-  
-    <a-scene>
-      <a-assets>
-        <audio id="click-sound" src="audio/click.ogg"></audio>
-        <!-- Images. -->
-        <img id="city" src="images/media/iglesia.jpg">
-        <img id="city-thumb" src="images/media/iglesia-t.jpg">
-        <img id="cubes" src="images/media/plaza.jpg">
-        <img id="cubes-thumb" src="images/media/plaza-t.jpg">
-        <img id="sechelt" src="images/media/rio.jpg">
-        <img id="sechelt-thumb" src="images/media/rio-t.jpg">
+</head>
 
-        <script id="plane" type="text/html">
-          <a-entity class="link"
-          geometry="primitive: plane; height: 1: width: 1"
-          material="shader: flat; src: ${thumb}"
-          sound="on: click; src: #click-sound"
-          set-image="on: click; target: #image-360; src: ${image}"
-          event-set__1="_event: mousedown; scale: 1 1 1"
-          event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-          event-set__4="_event: mouseleave; scale: 1 1 1"></a-entity>
-        </script>
-      </a-assets>
-      <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#city"></a-sky>
-      <!-- Link we will build. -->
-      <a-entity id="links" layout="layout: line; margin: 1.5" position="-1.5 1 -2.5">
-        <a-entity template="src: #plane" data-thumb="#city-thumb" data-image="#city"></a-entity>
-        <a-entity template="src: #plane" data-thumb="#cubes-thumb" data-image="#cubes"></a-entity>
-        <a-entity template="src: #plane" data-thumb="#sechelt-thumb" data-image="#sechelt"></a-entity>
-      </a-entity>
-      <!-- Camera + Cursor. -->
-      <a-camera>
-        <a-cursor id="cursor">
-          <a-animation begin="click" easing="ease-in" attribute="scale"
-                       fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
-          <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
-                       from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
-        </a-cursor>
-      </a-camera>
+<body>
+
+<a-scene>
+<a-assets>
+<video id="video" src="http://dev.nydelpics.com/360/360.mp4"
+               autoplay loop crossorigin="anonymous"></video>
+</a-assets>
+
+<a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
     </a-scene>
-    <script> 
-    AFRAME.registerComponent('set-image', {
-  
-  schema: {
-    on: {type: 'string'},
-    target: {type: 'selector'},
-    src: {type: 'string'},
-    dur: {type: 'number', default: 300}
-  },
-  
-  init: function () {
-    console.log('set-image init')
-    const data = this.data;
-    const el = this.el;
     
-    this.setupFadeAnimation();
-    
-    el.addEventListener(data.on, function () {
-      console.log("clicked");
-      // Fade out image.
-      data.target.emit('set-image-fade');
-      // Wait for fade to complete.
-      setTimeout(function () {
-        // Set image.
-        data.target.setAttribute('material', 'src', data.src);
-      }, data.dur);
-    });
-  },
-  
-  setupFadeAnimation: function () {
-    const data = this.data;
-    const targetEl = this.data.target;
+</body>
 
-    // Only set up once.
-    if (targetEl.dataset.setImageFadeSetup) { return; }
-    targetEl.dataset.setImageFadeSetup = true;
-
-    // Create animation.
-    targetEl.setAttribute('animation__fade', {
-      property: 'material.color',
-      startEvents: 'set-image-fade',
-      dir: 'alternate',
-      dur: data.dur,
-      from: '#FFF',
-      to: '#000'
-    });
-  }
-});
-    </script>
-  </body>
 </html>
 
-<?php } else { ?>
-<?php if (($_GET['op'])=='3') {?>
-
-<?php } else { ?>
-<?php if (($_GET['op'])=='4') {?>
-
-<?php }}}}} else{?>
+<?php }}}} else{?>
 <!DOCTYPE HTML>
 <html lang="es">
 
@@ -439,7 +487,7 @@ if (isset($_GET['op'])) {?>
             <div class="card card-style">
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Mundo virtual</h1>
-                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Obten información acerca de las
+                    <p class="text-center color-highlight font-11 mt-n1 pb-0 mb-1">Obten información acerca de las
                         actividades en este mundo virtual.</p>
                     <a href="https://app.pkroz.net/vr.php?op=1"
                         class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Entrar
@@ -449,17 +497,21 @@ if (isset($_GET['op'])) {?>
             <div class="card card-style">
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Lugares destacados</h1>
-                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Visualiza los lugares destacados de Lunahuana.</p>
+                    <p class="text-center color-highlight font-11 mt-n1 pb-0 mb-1">Visualiza los lugares destacados de
+                        Lunahuana.</p>
                     <a href="https://app.pkroz.net/vr.php?op=2"
-                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Ver lugares destacados</a>
+                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Ver
+                        lugares destacados</a>
                 </div>
             </div>
             <div class="card card-style">
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Actividades destacadas</h1>
-                    <p class="text-center color-highlight font-11 mt-n1 pb-0">Visualiza las actividades en Lunahuana.</p>
+                    <p class="text-center color-highlight font-11 mt-n1 pb-0 mb-1">Visualiza las actividades en
+                        Lunahuana.</p>
                     <a href="https://app.pkroz.net/vr.php?op=3"
-                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Ver actividades destacados</a>
+                        class="btn btn-m btn-center-l text-uppercase font-900 bg-highlight rounded-sm shadow-xl mb-4">Ver
+                        actividades destacados</a>
                 </div>
             </div>
             <div class="footer card card-style">
