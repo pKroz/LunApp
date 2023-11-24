@@ -408,11 +408,11 @@ if (isset($_GET['op'])) {?>
         <a-text id="loading-text" align="center" position="0 2 -5" color="white" value="Haz clic para entrar"></a-text>
         
         <!-- Video 360 -->
-        <a-video id="360-video" src="ruta_video360.mp4" rotation="0 -90 0" scale="2 2 2"></a-video>
+        <a-video id="360-video" src="images/media/canotaje360.mp4" rotation="0 -90 0" scale="2 2 2"></a-video>
         
         <!-- Evento para cambiar a pantalla completa al hacer clic -->
         <a-entity id="video-container" position="0 0 -4" scale="2 2 2" visible="false" cursor-listener>
-            <a-video src="ruta_video360.mp4" rotation="0 -90 0"></a-video>
+            <a-video src="images/media/canotaje360.mp4" rotation="0 -90 0"></a-video>
         </a-entity>
     </a-scene>
 
