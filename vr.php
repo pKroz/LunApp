@@ -52,8 +52,8 @@
             </div>
             <div class="card rounded-sm overflow-hidden mb-0">
                         <div class="bg-black opacity-60"></div>
-                        <>Pantalla Completa</button>
-                        <button class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase" onclick="toggleFullscreen()">VER COMPROBANTE DE PAGO</button>
+                
+                        <button class="btn btn-full btn-m rounded-sm shadow-xl bg-highlight font-700 text-uppercase" onclick="toggleFullscreen()">Pantalla Completa</button>
             </div>
             <div class="footer card card-style">
                 <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
