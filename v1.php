@@ -56,7 +56,18 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Tus filas y datos aquí -->
+        <tr>
+                                    <td>carlos</td>
+                                    <td>carlos</td>
+                                    <td>carlos</td>
+                                    <td>carlos</td>
+                                </tr>
+                                <tr>
+                                    <td>carlos2</td>
+                                    <td>carlos2</td>
+                                    <td>carlos2</td>
+                                    <td>carlos2</td>
+                                </tr>
         </tbody>
         <tfoot>
             <tr>
