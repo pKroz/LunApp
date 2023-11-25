@@ -44,36 +44,32 @@
         <div class="page-content header-clear-medium">
             <div class="card card-style">
                 <div class="content mb-0">
-                    <h1 class="text-center mb-0">Mundo virtual</h1>
-                    <div class="table-responsive" style="overflow-x: auto;"> <!-- Estilo en línea agregado aquí -->
-    <table id="tables1" class="display" style="width:100%">
+                    <h1 class="text-center mb-0">Recuento de visitas por minuto</h1>
+                    <div class="table-responsive" style="overflow-x: auto;">
+                        <table id="tables1" class="display" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Mes</th>
-                                    <th>Actividad</th>
-                                    <th>Fecha</th>
-                                    <th>Participantes</th>
+                                    <th>ID</th>
+                                    <th>DIA</th>
+                                    <th>MES</th>
+                                    <th>TIEMPO (min)</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
+                            include('./config.php');
+                            $sqlInd = ("SELECT * FROM `ind1`");
+                            $queryInd = mysqli_query($con, $sqlInd);
+                            ?>
+                            <?php 
+                            while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
                                 <tr>
-                                    <td>junio</td>
-                                    <td>comer</td>
-                                    <td>123</td>
-                                    <td>3</td>
+                                    <td><?php echo ($dataInd['id']); ?></td>
+                                    <td><?php echo ($dataInd['dia']); ?></td>
+                                    <td><?php echo ($dataInd['mes']); ?></td>
+                                    <td><?php echo ($dataInd['tiempo']); ?></td>
                                 </tr>
-                                <tr>
-                                    <td>mayo</td>
-                                    <td>reir</td>
-                                    <td>423</td>
-                                    <td>4</td>
-                                </tr>
-                                <tr>
-                                    <td>junio</td>
-                                    <td>reir</td>
-                                    <td>423</td>
-                                    <td>3</td>
-                                </tr>
+                            <?php } ?>
                             </tbody>
                         </table>
                     </div>
