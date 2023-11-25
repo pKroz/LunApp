@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css">
+        <!-- Agrega estilos y scripts de DataTables en el <head> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css">
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
@@ -66,12 +67,34 @@
         </div>
         
         <script>
-            $(document).ready(function() {
-                $('#example').DataTable({
-                    "scrollX": true // Habilita el desplazamiento horizontal si es necesario
-                });
-            });
-        </script>
+                    $(document).ready(function() {
+                        // Inicializa la tabla y almacena la referencia
+                        var table = $('#example').DataTable({
+                            "scrollX": true,
+                            initComplete: function () {
+                                // Para cada columna
+                                this.api().columns().every(function () {
+                                    var column = this;
+                                    // Crea un elemento select
+                                    var select = $('<select><option value=""></option></select>')
+                                        .appendTo($(column.footer()).empty())
+                                        .on('change', function () {
+                                            var val = $.fn.dataTable.util.escapeRegex(
+                                                $(this).val()
+                                            );
+                                            column
+                                                .search(val ? '^'+val+'$' : '', true, false)
+                                                .draw();
+                                        });
+                                    // Agrega opciones al select basadas en los datos de la columna
+                                    column.data().unique().sort().each(function (d, j) {
+                                        select.append('<option value="'+d+'">'+d+'</option>')
+                                    });
+                                });
+                            }
+                        });
+                    });
+                </script>
             <div class="footer card card-style">
                 <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                 <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el Semillero de
