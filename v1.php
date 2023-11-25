@@ -82,28 +82,26 @@
 
 <script>
 $(document).ready(function() {
-    // Inicializa la DataTable
-    var table = $('#example').DataTable({
-        "scrollX": true
-    });
-
-    // Agrega un campo de búsqueda por columna
-    $('#example tfoot th').each(function() {
+    // Setup - add a text input to each footer cell
+    $('#example thead tr').clone(true).appendTo( '#example thead' );
+    $('#example thead tr:eq(1) th').each( function (i) {
         var title = $(this).text();
-        $(this).html('<input type="text" placeholder="Buscar '+title+'" />');
-    });
-
-    // Aplica el filtro
-    table.columns().every(function() {
-        var that = this;
-
-        $('input', this.footer()).on('keyup change', function() {
-            if (that.search() !== this.value) {
-                that
-                    .search(this.value)
+        $(this).html( '<input type="text" placeholder="Buscar '+title+'" />' );
+    
+        $( 'input', this ).on( 'keyup change', function () {
+            if ( table.column(i).search() !== this.value ) {
+                table
+                    .column(i)
+                    .search( this.value )
                     .draw();
             }
-        });
+        } );
+    } );
+  
+    var table = $('#example').DataTable({
+        orderCellsTop: true,
+        fixedHeader: true,
+        scrollX: true
     });
 });
 </script>
