@@ -45,8 +45,6 @@
         <div class="card card-style">
     <div class="content mb-0">
         <h1 class="text-center mb-0">Mundo virtual</h1>
-        <p class="text-center color-highlight font-11 mt-n1 pb-0 mb-1">Obten información acerca de las actividades en este mundo virtual.</p>
-        <!-- DataTable Structure -->
         <table id="example" class="display" style="width:100%">
             <thead>
                 <tr>
@@ -65,6 +63,11 @@
             </tr>
             </tbody>
         </table>
+        <script>
+            $(document).ready(function() {
+                $('#example').DataTable();
+            });
+        </script>
             <div class="footer card card-style">
                 <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                 <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el Semillero de
