@@ -1,4 +1,3 @@
-// Comprueba si se ha proporcionado idProyecto a través de GET
 <!DOCTYPE HTML>
 <html lang="es">
 
