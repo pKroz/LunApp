@@ -56,12 +56,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <?php
+                                <?php
                             include('./config.php');
                             $sqlInd = ("SELECT * FROM `ind1`");
                             $queryInd = mysqli_query($con, $sqlInd);
                             ?>
-                            <?php 
+                                <?php 
                             while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
                                 <tr>
                                     <td><?php echo ($dataInd['id']); ?></td>
@@ -69,7 +69,7 @@
                                     <td><?php echo ($dataInd['mes']); ?></td>
                                     <td><?php echo ($dataInd['tiempo']); ?></td>
                                 </tr>
-                            <?php } ?>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
@@ -96,10 +96,12 @@
                             "orderCellsTop": true,
                             "fixedHeader": true,
                             "scrollX": true,
-                            "searching": false, // Desactiva la búsqueda global
+                            "searching": false,
                             "language": {
                                 "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
-                            }
+                            },
+                            "paging": false, // Desactiva la paginación
+                            "info": false // Oculta el texto de la información de la tabla
                         });
                     });
                     </script>
