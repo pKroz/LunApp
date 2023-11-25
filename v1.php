@@ -46,66 +46,56 @@
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Mundo virtual</h1>
                     <div class="table-responsive">
-                        <table id="example" class="display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Mes</th>
-                                    <th>Actividad</th>
-                                    <th>Fecha</th>
-                                    <th>Participantes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>carlos</td>
-                                    <td>carlos</td>
-                                    <td>carlos</td>
-                                    <td>carlos</td>
-                                </tr>
-                                <tr>
-                                    <td>carlos2</td>
-                                    <td>carlos2</td>
-                                    <td>carlos2</td>
-                                    <td>carlos2</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Mes</th>
-                                    <th>Actividad</th>
-                                    <th>Fecha</th>
-                                    <th>Participantes</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Actividad</th>
+                <th>Fecha</th>
+                <th>Participantes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tus filas y datos aquí -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Mes</th>
+                <th>Actividad</th>
+                <th>Fecha</th>
+                <th>Participantes</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 
-                    <script>
-                    $(document).ready(function() {
-                        // Inicializa la tabla y almacena la referencia
-                        var table = $('#example').DataTable({
-                            "scrollX": true
-                        });
+<script>
+$(document).ready(function() {
+    // Inicializa la DataTable
+    var table = $('#example').DataTable({
+        "scrollX": true
+    });
 
-                        // Añade un evento listener a cada columna
-                        $('#example tfoot th').each(function() {
-                            var title = $(this).text();
-                            $(this).html('<input type="text" placeholder="Buscar ' + title + '" />');
-                        });
+    // Agrega un campo de búsqueda por columna
+    $('#example tfoot th').each(function() {
+        var title = $(this).text();
+        $(this).html('<input type="text" placeholder="Buscar '+title+'" />');
+    });
 
-                        // Aplica el filtro
-                        table.columns().every(function() {
-                            var that = this;
-                            $('input', this.footer()).on('keyup change clear', function() {
-                                if (that.search() !== this.value) {
-                                    that
-                                        .search(this.value)
-                                        .draw();
-                                }
-                            });
-                        });
-                    });
-                    </script>
+    // Aplica el filtro
+    table.columns().every(function() {
+        var that = this;
+
+        $('input', this.footer()).on('keyup change', function() {
+            if (that.search() !== this.value) {
+                that
+                    .search(this.value)
+                    .draw();
+            }
+        });
+    });
+});
+</script>
                     <div class="footer card card-style">
                         <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                         <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el
