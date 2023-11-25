@@ -45,7 +45,7 @@
             <div class="card card-style">
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Recuento de visitas por minuto</h1>
-                    <div class="table-responsive" style="overflow-x: auto;">
+                    <div class="table-responsive" >
                         <table id="tables1" class="display" style="width:100%">
                             <thead>
                                 <tr>
