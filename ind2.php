@@ -67,7 +67,7 @@
                                     <td><?php echo ($dataInd['id']); ?></td>
                                     <td><?php echo ($dataInd['dia']); ?></td>
                                     <td><?php echo ($dataInd['mes']); ?></td>
-                                    <td><?php echo ($dataInd['tiempo']); ?></td>
+                                    <td><?php echo ($dataInd['cantidad']); ?></td>
                                 </tr>
                                 <?php } ?>
                             </tbody>
