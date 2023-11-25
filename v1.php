@@ -62,6 +62,12 @@
                     <td>".$row['mes']."</td>
                     <td>".$row['mes']."</td>
                 </tr>
+                <tr>
+                    <td>".$row['mes'].1"</td>
+                    <td>".$row['mes'].1"</td>
+                    <td>".$row['mes'].1"</td>
+                    <td>".$row['mes'].1"</td>
+                </tr>
                 </tbody>
                 <tfoot>
                             <tr>
