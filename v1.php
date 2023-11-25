@@ -46,7 +46,7 @@
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Mundo virtual</h1>
                     <div class="table-responsive">
-    <table id="example" class="display" style="width:100%">
+    <table id="tables1" class="display" style="width:100%">
         <thead>
             <tr>
                 <th>Mes</th>
@@ -57,7 +57,7 @@
         </thead>
         <tbody>
         <tr>
-                                    <td>carlos</td>
+                                    <td>junio</td>
                                     <td>carlos</td>
                                     <td>carlos</td>
                                     <td>carlos</td>
@@ -69,22 +69,14 @@
                                     <td>carlos2</td>
                                 </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th>Mes</th>
-                <th>Actividad</th>
-                <th>Fecha</th>
-                <th>Participantes</th>
-            </tr>
-        </tfoot>
     </table>
 </div>
 
 <script>
 $(document).ready(function() {
     // Setup - add a text input to each footer cell
-    $('#example thead tr').clone(true).appendTo( '#example thead' );
-    $('#example thead tr:eq(1) th').each( function (i) {
+    $('#tables1 thead tr').clone(true).appendTo( '#tables1 thead' );
+    $('#tables1 thead tr:eq(1) th').each( function (i) {
         var title = $(this).text();
         $(this).html( '<input type="text" placeholder="Buscar '+title+'" />' );
     
@@ -98,7 +90,7 @@ $(document).ready(function() {
         } );
     } );
   
-    var table = $('#example').DataTable({
+    var table = $('#tables1').DataTable({
         orderCellsTop: true,
         fixedHeader: true,
         scrollX: true
