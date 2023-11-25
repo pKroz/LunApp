@@ -99,7 +99,9 @@
                         var table = $('#tables1').DataTable({
                             "orderCellsTop": true,
                             "fixedHeader": true,
-                            "scrollX": true,
+                            "sScrollX": "100%",
+                            "sScrollXInner": "110%",
+                            "bScrollCollapse": true,
                             "searching": false, // Desactiva la búsqueda global
                             "language": {
                                 "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
