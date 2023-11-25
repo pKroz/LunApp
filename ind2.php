@@ -58,7 +58,7 @@
                             <tbody>
                                 <?php
                             include('./config.php');
-                            $sqlInd = ("SELECT * FROM `ind1`");
+                            $sqlInd = ("SELECT * FROM `ind2`");
                             $queryInd = mysqli_query($con, $sqlInd);
                             ?>
                                 <?php 
