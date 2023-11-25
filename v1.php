@@ -57,16 +57,16 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>".$row['mes']."</td>
-                                    <td>".$row['mes']."</td>
-                                    <td>".$row['mes']."</td>
-                                    <td>".$row['mes']."</td>
+                                    <td>carlos</td>
+                                    <td>carlos</td>
+                                    <td>carlos</td>
+                                    <td>carlos</td>
                                 </tr>
                                 <tr>
-                                    <td>".$row['mes'].1"</td>
-                                    <td>".$row['mes'].1"</td>
-                                    <td>".$row['mes'].1"</td>
-                                    <td>".$row['mes'].1"</td>
+                                    <td>carlos2</td>
+                                    <td>carlos2</td>
+                                    <td>carlos2</td>
+                                    <td>carlos2</td>
                                 </tr>
                             </tbody>
                             <tfoot>
