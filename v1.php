@@ -45,27 +45,32 @@
         <div class="card card-style">
     <div class="content mb-0">
         <h1 class="text-center mb-0">Mundo virtual</h1>
-        <table id="example" class="display" style="width:100%">
-            <thead>
+        <div class="table-responsive">
+            <table id="example" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Actividad</th>
+                        <th>Fecha</th>
+                        <th>Participantes</th>
+                    </tr>
+                </thead>
+                <tbody>
                 <tr>
-                    <th>Mes</th>
-                    <th>Actividad</th>
-                    <th>Fecha</th>
-                    <th>Participantes</th>
+                    <td>".$row['mes']."</td>
+                    <td>".$row['mes']."</td>
+                    <td>".$row['mes']."</td>
+                    <td>".$row['mes']."</td>
                 </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>".$row['mes']."</td>
-                <td>".$row['mes']."</td>
-                <td>".$row['mes']."</td>
-                <td>".$row['mes']."</td>
-            </tr>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+        
         <script>
             $(document).ready(function() {
-                $('#example').DataTable();
+                $('#example').DataTable({
+                    "scrollX": true // Habilita el desplazamiento horizontal si es necesario
+                });
             });
         </script>
             <div class="footer card card-style">
