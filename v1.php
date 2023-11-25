@@ -58,15 +58,21 @@
         <tbody>
         <tr>
                                     <td>junio</td>
-                                    <td>carlos</td>
-                                    <td>carlos</td>
-                                    <td>carlos</td>
+                                    <td>comer</td>
+                                    <td>123</td>
+                                    <td>3</td>
                                 </tr>
                                 <tr>
-                                    <td>carlos2</td>
-                                    <td>carlos2</td>
-                                    <td>carlos2</td>
-                                    <td>carlos2</td>
+                                    <td>mayo</td>
+                                    <td>reir</td>
+                                    <td>423</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>junio</td>
+                                    <td>reir</td>
+                                    <td>423</td>
+                                    <td>3</td>
                                 </tr>
         </tbody>
     </table>
