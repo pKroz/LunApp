@@ -46,17 +46,17 @@
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Mundo virtual</h1>
                     <div class="table-responsive">
-    <table id="tables1" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th>Mes</th>
-                <th>Actividad</th>
-                <th>Fecha</th>
-                <th>Participantes</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
+                        <table id="tables1" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Mes</th>
+                                    <th>Actividad</th>
+                                    <th>Fecha</th>
+                                    <th>Participantes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
                                     <td>junio</td>
                                     <td>comer</td>
                                     <td>123</td>
@@ -74,35 +74,39 @@
                                     <td>423</td>
                                     <td>3</td>
                                 </tr>
-        </tbody>
-    </table>
-</div>
+                            </tbody>
+                        </table>
+                    </div>
 
-<script>
-$(document).ready(function() {
-    // Setup - add a text input to each footer cell
-    $('#tables1 thead tr').clone(true).appendTo( '#tables1 thead' );
-    $('#tables1 thead tr:eq(1) th').each( function (i) {
-        var title = $(this).text();
-        $(this).html( '<input type="text" placeholder="Buscar '+title+'" />' );
-    
-        $( 'input', this ).on( 'keyup change', function () {
-            if ( table.column(i).search() !== this.value ) {
-                table
-                    .column(i)
-                    .search( this.value )
-                    .draw();
-            }
-        } );
-    } );
-  
-    var table = $('#tables1').DataTable({
-        orderCellsTop: true,
-        fixedHeader: true,
-        scrollX: true
-    });
-});
-</script>
+                    <script>
+                    $(document).ready(function() {
+                        // Setup - add a text input to each footer cell
+                        $('#tables1 thead tr').clone(true).appendTo('#tables1 thead');
+                        $('#tables1 thead tr:eq(1) th').each(function(i) {
+                            var title = $(this).text();
+                            $(this).html('<input type="text" placeholder="Buscar ' + title + '" />');
+
+                            $('input', this).on('keyup change', function() {
+                                if (table.column(i).search() !== this.value) {
+                                    table
+                                        .column(i)
+                                        .search(this.value)
+                                        .draw();
+                                }
+                            });
+                        });
+
+                        var table = $('#tables1').DataTable({
+                            "orderCellsTop": true,
+                            "fixedHeader": true,
+                            "scrollX": true,
+                            "searching": false, // Desactiva la búsqueda global
+                            "language": {
+                                "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+                            }
+                        });
+                    });
+                    </script>
                     <div class="footer card card-style">
                         <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                         <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el
