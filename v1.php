@@ -45,8 +45,8 @@
             <div class="card card-style">
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Mundo virtual</h1>
-                    <div class="table-responsive">
-                        <table id="tables1" class="display" style="width:100%">
+                    <div class="table-responsive" style="overflow-x: auto;"> <!-- Estilo en línea agregado aquí -->
+    <table id="tables1" class="display" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>Mes</th>
@@ -99,9 +99,7 @@
                         var table = $('#tables1').DataTable({
                             "orderCellsTop": true,
                             "fixedHeader": true,
-                            "sScrollX": "100%",
-                            "sScrollXInner": "110%",
-                            "bScrollCollapse": true,
+                            "scrollX": true,
                             "searching": false, // Desactiva la búsqueda global
                             "language": {
                                 "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
