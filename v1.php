@@ -63,6 +63,14 @@
                     <td>".$row['mes']."</td>
                 </tr>
                 </tbody>
+                <tfoot>
+                            <tr>
+                                <th>Mes</th>
+                                <th>Actividad</th>
+                                <th>Fecha</th>
+                                <th>Participantes</th>
+                            </tr>
+                        </tfoot>
             </table>
         </div>
         
