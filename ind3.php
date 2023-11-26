@@ -53,7 +53,7 @@
 
             // Opciones para la apariencia del gráfico.
             var options = {
-                title: 'Recuento de Opiniones'
+                title: 'Recuento de Opiniones del aplicativo'
             };
 
             // Crea y dibuja el gráfico circular, pasando los datos y opciones.
@@ -82,8 +82,9 @@
         <div class="page-content header-clear-medium">
             <div class="card card-style">
                 <div class="content mb-0">
-                    <h1 class="text-center mb-0">Recuento de interes (presionan contactar)</h1>
-                    <div id="chart_div"></div>                       
+                    <h1 class="text-center mb-2">Recuento de interes (presionan contactar)</h1>
+                    <div id="table-responsive">
+                        <div id="chart_div"></div>                       
                     </div>
                     <div class="footer card card-style">
                         <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
