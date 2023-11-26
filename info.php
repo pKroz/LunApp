@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <?php include_once './assets/head.php'?>
-<title>LunApp - Información</title>
+<title>TravelTour - Información</title>
 </head>
 
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">

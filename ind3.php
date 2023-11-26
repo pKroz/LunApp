@@ -22,7 +22,7 @@
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
-    <title>LunApp - VR</title>
+    <title>TravelTour - VR</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         // Carga el API de visualización y el paquete piechart.
@@ -85,7 +85,7 @@
                     <h1 class="text-center mb-2">Recuento de interes (presionan contactar)</h1>
                     <div id="chart_div" style="width: 100%; height: 500px; margin: auto;"></div>                       
                     <div class="footer card card-style">
-                        <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
+                        <a href="#" class="footer-title"><span class="color-highlight">TravelTour</span></a>
                         <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el
                                 Semillero de
                                 Investigación CLAB</span><br><br>Diseñado por Enabled y configurado por krozDev</p>

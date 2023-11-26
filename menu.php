@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <?php include_once './assets/head.php'?>
-<title>LunApp - Menú</title>
+<title>TravelTour - Menú</title>
 </head>
 
 

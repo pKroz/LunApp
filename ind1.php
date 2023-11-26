@@ -22,7 +22,7 @@
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
-    <title>LunApp - VR</title>
+    <title>TravelTour - VR</title>
 </head>
 
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
@@ -105,7 +105,7 @@
                     });
                     </script>
                     <div class="footer card card-style">
-                        <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
+                        <a href="#" class="footer-title"><span class="color-highlight">TravelTour</span></a>
                         <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el
                                 Semillero de
                                 Investigación CLAB</span><br><br>Diseñado por Enabled y configurado por krozDev</p>
@@ -162,7 +162,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Menu Settings Highlights-->
                 <div id="menu-highlights" class="menu menu-box-bottom menu-box-detached">
                     <div class="menu-title">
                         <h1>Color auxiliar</h1>
@@ -251,7 +250,6 @@
                             a ajustes</a>
                     </div>
                 </div>
-                <!-- Menu Share -->
                 <div id="menu-share" class="menu menu-box-bottom menu-box-detached">
                     <div class="menu-title mt-n1">
                         <h1>Share the Love</h1>

@@ -1,5 +1,5 @@
 <div class="footer card card-style">
-            <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
+            <a href="#" class="footer-title"><span class="color-highlight">TravelTour</span></a>
             <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el Semillero de Investigación CLAB</span><br><br>Diseñado por Enabled y configurado por krozDev</p>
             <div class="text-center mb-3">
                 <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-facebook"><i class="fab fa-facebook-f"></i></a>
