@@ -23,6 +23,45 @@
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
     <link rel="shortcut icon" href="app/icons/favicon.ico" />
     <title>LunApp - VR</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        // Carga el API de visualización y el paquete piechart.
+        google.charts.load('current', {'packages':['corechart']});
+
+        // Define la función callback para crear el gráfico circular.
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Dibuja el gráfico circular.
+        function drawChart() {
+            // Crea la tabla de datos.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Opinion');
+            data.addColumn('number', 'Cantidad');
+            data.addRows([
+                // Aquí irán tus datos. Por ejemplo:
+                <?php
+                            include('./config.php');
+                            $sqlInd = ("SELECT opinion, COUNT(*) as total FROM ind3 GROUP BY opinion;");
+                            $queryInd = mysqli_query($con, $sqlInd);
+                            ?>
+                                <?php 
+                            while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
+                ['<?php echo ($dataInd['opinion']); ?>', <?php echo ($dataInd['total']); ?>]
+                ['MALO', 1]
+                <?php } ?>
+                // Debes reemplazar esto con tus datos reales.
+            ]);
+
+            // Opciones para la apariencia del gráfico.
+            var options = {
+                title: 'Recuento de Opiniones'
+            };
+
+            // Crea y dibuja el gráfico circular, pasando los datos y opciones.
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
 </head>
 
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
@@ -46,63 +85,8 @@
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Recuento de interes (presionan contactar)</h1>
                     <div class="table-responsive" >
-                        <table id="tables1" class="display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>DIA</th>
-                                    <th>MES</th>
-                                    <th>CANTIDAD</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                            include('./config.php');
-                            $sqlInd = ("SELECT * FROM `ind2`");
-                            $queryInd = mysqli_query($con, $sqlInd);
-                            ?>
-                                <?php 
-                            while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
-                                <tr>
-                                    <td><?php echo ($dataInd['id']); ?></td>
-                                    <td><?php echo ($dataInd['dia']); ?></td>
-                                    <td><?php echo ($dataInd['mes']); ?></td>
-                                    <td><?php echo ($dataInd['cantidad']); ?></td>
-                                </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
+                        <div id="chart_div"></div>                       
                     </div>
-
-                    <script>
-                    $(document).ready(function() {
-                        $('#tables1 thead tr').clone(true).appendTo('#tables1 thead');
-                        $('#tables1 thead tr:eq(1) th').each(function(i) {
-                            var title = $(this).text();
-                            $(this).html('<input type="text" placeholder="Buscar ' + title + '" />');
-
-                            $('input', this).on('keyup change', function() {
-                                if (table.column(i).search() !== this.value) {
-                                    table
-                                        .column(i)
-                                        .search(this.value)
-                                        .draw();
-                                }
-                            });
-                        });
-
-                        var table = $('#tables1').DataTable({
-                            "orderCellsTop": true,
-                            "fixedHeader": true,
-                            "scrollX": true,
-                            "language": {
-                                "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
-                            },
-                            "paging": false, // Desactiva la paginación
-                            "info": false // Oculta el texto de la información de la tabla
-                        });
-                    });
-                    </script>
                     <div class="footer card card-style">
                         <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
                         <p class="footer-text"><span>Aplicativo enfocado al turismo en Lunahuana, elaborado para el
