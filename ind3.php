@@ -84,7 +84,7 @@
                 <div class="content mb-0">
                     <h1 class="text-center mb-2">Recuento de interes (presionan contactar)</h1>
                     <div id="table-responsive">
-                        <div id="chart_div"></div>                       
+                    <div id="chart_div" style="width: 100%; height: 500px; margin: auto;"></div>                       
                     </div>
                     <div class="footer card card-style">
                         <a href="#" class="footer-title"><span class="color-highlight">LunApp</span></a>
