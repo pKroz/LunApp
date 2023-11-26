@@ -47,7 +47,6 @@
                                 <?php 
                             while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
                 ['<?php echo ($dataInd['opinion']); ?>', <?php echo ($dataInd['total']); ?>]
-                ['MALO', 1]
                 <?php } ?>
                 // Debes reemplazar esto con tus datos reales.
             ]);
