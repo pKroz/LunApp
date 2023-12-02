@@ -46,34 +46,33 @@
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Recuento de visitas (minutos activos en el aplicativo)</h1>
                     <div class="table-responsive">
-                        <table id="tables1" class="display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th style="color: white;">ID</th>
-                                    <th style="color: white;">DIA</th>
-                                    <th style="color: white;">MES</th>
-                                    <th style="color: white;">TIEMPO (min)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
+    <table id="tables1" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th style="width: 100px; color: white;">ID</th>
+                <th style="width: 150px; color: white;">DIA</th>
+                <th style="width: 150px; color: white;">MES</th>
+                <th style="width: 200px; color: white;">TIEMPO (min)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
                 include('./config.php');
                 $sqlInd = ("SELECT * FROM `ind1`");
                 $queryInd = mysqli_query($con, $sqlInd);
             ?>
-                                <?php 
+            <?php 
                 while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
-                                <tr>
-                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['id']); ?></td>
-                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['dia']); ?></td>
-                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['mes']); ?></td>
-                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['tiempo']); ?>
-                                    </td>
-                                </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
+                    <tr>
+                        <td style="color: white;"><?php echo ($dataInd['id']); ?></td>
+                        <td style="color: white;"><?php echo ($dataInd['dia']); ?></td>
+                        <td style="color: white;"><?php echo ($dataInd['mes']); ?></td>
+                        <td style="color: white;"><?php echo ($dataInd['tiempo']); ?></td>
+                    </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</div>
 
                     <script>
                     $(document).ready(function() {
