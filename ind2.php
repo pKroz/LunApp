@@ -79,7 +79,7 @@
                         $('#tables1 thead tr').clone(true).appendTo('#tables1 thead');
                         $('#tables1 thead tr:eq(1) th').each(function(i) {
                             var title = $(this).text();
-                            $(this).html('<input type="text" placeholder="Buscar ' + title + '" />');
+                            $(this).html('<input type="text" placeholder="' + title + '" />');
 
                             $('input', this).on('keyup change', function() {
                                 if (table.column(i).search() !== this.value) {
