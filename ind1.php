@@ -52,7 +52,7 @@
                 <th style="width: 100px; color: white;">ID</th>
                 <th style="width: 150px; color: white;">DIA</th>
                 <th style="width: 150px; color: white;">MES</th>
-                <th style="width: 200px; color: white;">TIEMPO (min)</th>
+                <th style="width: 200px; color: white;">TIEMPO</th>
             </tr>
         </thead>
         <tbody>
@@ -67,7 +67,7 @@
                         <td style="color: white;"><?php echo ($dataInd['id']); ?></td>
                         <td style="color: white;"><?php echo ($dataInd['dia']); ?></td>
                         <td style="color: white;"><?php echo ($dataInd['mes']); ?></td>
-                        <td style="color: white;"><?php echo ($dataInd['tiempo']); ?></td>
+                        <td style="color: white;"><?php echo ($dataInd['tiempo']); ?>min.</td>
                     </tr>
             <?php } ?>
         </tbody>
