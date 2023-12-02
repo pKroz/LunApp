@@ -50,9 +50,9 @@
         <thead>
             <tr>
                 <th style="width: 100px; color: white;">ID</th>
-                <th style="width: 150px; color: white;">DIA</th>
-                <th style="width: 150px; color: white;">MES</th>
-                <th style="width: 200px; color: white;">TIEMPO</th>
+                <th style="width: 100px; color: white;">DIA</th>
+                <th style="width: 100px; color: white;">MES</th>
+                <th style="width: 100px; color: white;">TIEMPO</th>
             </tr>
         </thead>
         <tbody>
