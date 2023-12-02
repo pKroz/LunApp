@@ -47,14 +47,14 @@
                     <h1 class="text-center mb-0">Recuento de interes (presionan contactar)</h1>
                     <div class="table-responsive" >
                         <table id="tables1" class="display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>DIA</th>
-                                    <th>MES</th>
-                                    <th>CANTIDAD</th>
-                                </tr>
-                            </thead>
+                        <thead>
+                <tr>
+                    <th style="width: 100px; color: white;">ID</th>
+                    <th style="width: 150px; color: white;">DIA</th>
+                    <th style="width: 150px; color: white;">MES</th>
+                    <th style="width: 200px; color: white;">CANTIDAD</th>
+                </tr>
+            </thead>
                             <tbody>
                                 <?php
                             include('./config.php');
@@ -64,10 +64,10 @@
                                 <?php 
                             while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
                                 <tr>
-                                    <td><?php echo ($dataInd['id']); ?></td>
-                                    <td><?php echo ($dataInd['dia']); ?></td>
-                                    <td><?php echo ($dataInd['mes']); ?></td>
-                                    <td><?php echo ($dataInd['cantidad']); ?></td>
+                                    <td style="width: 100px; color: white; overflow: hidden; text-overflow: ellipsis;"><?php echo ($dataInd['id']); ?></td>
+                                    <td style="width: 150px; color: white; overflow: hidden; text-overflow: ellipsis;"><?php echo ($dataInd['dia']); ?></td>
+                                    <td style="width: 150px; color: white; overflow: hidden; text-overflow: ellipsis;"><?php echo ($dataInd['mes']); ?></td>
+                                    <td style="width: 200px; color: white; overflow: hidden; text-overflow: ellipsis;"><?php echo ($dataInd['cantidad']); ?></td>
                                 </tr>
                                 <?php } ?>
                             </tbody>
