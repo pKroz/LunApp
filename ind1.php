@@ -67,7 +67,7 @@
                         <td style="color: white;"><?php echo ($dataInd['id']); ?></td>
                         <td style="color: white;"><?php echo ($dataInd['dia']); ?></td>
                         <td style="color: white;"><?php echo ($dataInd['mes']); ?></td>
-                        <td style="color: white;"><?php echo ($dataInd['tiempo']); ?>min.</td>
+                        <td style="color: white;"><?php echo ($dataInd['tiempo']); ?> min.</td>
                     </tr>
             <?php } ?>
         </tbody>
@@ -80,7 +80,7 @@
                         $('#tables1 thead tr').clone(true).appendTo('#tables1 thead');
                         $('#tables1 thead tr:eq(1) th').each(function(i) {
                             var title = $(this).text();
-                            $(this).html('<input type="text" placeholder="Buscar ' + title + '" />');
+                            $(this).html('<input type="text" placeholder="' + title + '" />');
 
                             $('input', this).on('keyup change', function() {
                                 if (table.column(i).search() !== this.value) {
