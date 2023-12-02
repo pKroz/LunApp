@@ -45,29 +45,30 @@
             <div class="card card-style">
                 <div class="content mb-0">
                     <h1 class="text-center mb-0">Recuento de visitas (minutos activos en el aplicativo)</h1>
-                    <div class="table-responsive" >
+                    <div class="table-responsive">
                         <table id="tables1" class="display" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>DIA</th>
-                                    <th>MES</th>
-                                    <th>TIEMPO (min)</th>
+                                    <th style="color: white;">ID</th>
+                                    <th style="color: white;">DIA</th>
+                                    <th style="color: white;">MES</th>
+                                    <th style="color: white;">TIEMPO (min)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                            include('./config.php');
-                            $sqlInd = ("SELECT * FROM `ind1`");
-                            $queryInd = mysqli_query($con, $sqlInd);
-                            ?>
+                include('./config.php');
+                $sqlInd = ("SELECT * FROM `ind1`");
+                $queryInd = mysqli_query($con, $sqlInd);
+            ?>
                                 <?php 
-                            while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
+                while ($dataInd = mysqli_fetch_array($queryInd)) { ?>
                                 <tr>
-                                    <td><?php echo ($dataInd['id']); ?></td>
-                                    <td><?php echo ($dataInd['dia']); ?></td>
-                                    <td><?php echo ($dataInd['mes']); ?></td>
-                                    <td><?php echo ($dataInd['tiempo']); ?></td>
+                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['id']); ?></td>
+                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['dia']); ?></td>
+                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['mes']); ?></td>
+                                    <td style="white-space: nowrap; color: white;"><?php echo ($dataInd['tiempo']); ?>
+                                    </td>
                                 </tr>
                                 <?php } ?>
                             </tbody>
