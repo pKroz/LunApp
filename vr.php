@@ -1,4 +1,9 @@
 <?php
+// Comprueba si se ha proporcionado idProyecto a través de GET
+if (isset($_GET['op'])) {?>
+
+<?php if (($_GET['op'])=='1') {?>
+    <?php
  
  function isMobileDevice() {
     $userAgent = $_SERVER['HTTP_USER_AGENT'];
@@ -13,16 +18,10 @@
 }
 
 if (isMobileDevice()) {
- header('Location: movil.php');
+ header('Location: https://framevr.io/canetelab');
      exit();
 }
 ?> 
-<?php
-// Comprueba si se ha proporcionado idProyecto a través de GET
-if (isset($_GET['op'])) {?>
-
-<?php if (($_GET['op'])=='1') {?>
-
 <!DOCTYPE HTML>
 <html lang="es">
 
