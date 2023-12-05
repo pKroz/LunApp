@@ -1,4 +1,23 @@
 <?php
+ 
+ function isMobileDevice() {
+    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+ $mobileKeywords = array('Android', 'iPhone', 'iPad', 'Windows Phone', 'BlackBerry', 'Mobile');
+    
+   foreach ($mobileKeywords as $keyword) {
+      if (stripos($userAgent, $keyword) !== false) {
+            return true;
+       }
+  }
+  return false;
+}
+
+if (!isMobileDevice()) {
+ header('Location: movil.php');
+     exit();
+}
+?> 
+<?php
 // Comprueba si se ha proporcionado idProyecto a través de GET
 if (isset($_GET['op'])) {?>
 
