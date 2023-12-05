@@ -12,7 +12,7 @@
   return false;
 }
 
-if (!isMobileDevice()) {
+if (isMobileDevice()) {
  header('Location: movil.php');
      exit();
 }
